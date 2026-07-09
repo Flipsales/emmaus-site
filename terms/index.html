@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — Emmaus</title>
+<meta name="description" content="The End-User License Agreement and Terms of Use for the Emmaus app, including subscription, AI, safety, and Apple-specific terms.">
+<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://getemmaus.app/terms/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB; --border-strong:#D9CBB4;
+    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#7A6C5C;
+    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B; --accent-text:#8A5E12;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --focus:rgba(94,127,70,.5); --bar:rgba(251,246,238,.85);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#171310; --surface:#211B15; --border:#362D23; --border-strong:#4A3E31;
+      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
+      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C; --accent-text:#E0B15C;
+      --focus:rgba(159,187,134,.6); --bar:rgba(23,19,16,.85);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
+    line-height:1.72; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:6px}
+  a{color:var(--primary); text-decoration:underline; text-underline-offset:2px; word-break:break-word}
+  a:hover{color:var(--primary-hover)}
+  .topbar{position:sticky; top:0; z-index:5; background:var(--bar);
+    -webkit-backdrop-filter:saturate(1.3) blur(8px); backdrop-filter:saturate(1.3) blur(8px);
+    border-bottom:1px solid var(--border)}
+  .topbar-inner{max-width:46rem; margin:0 auto; padding:13px 24px; display:flex; align-items:center; gap:14px}
+  .home{display:inline-flex; align-items:center; gap:6px; font-size:.9rem; font-weight:600;
+    color:var(--text-secondary); text-decoration:none; white-space:nowrap}
+  .home:hover{color:var(--primary)}
+  .doc-title{font-family:var(--serif); font-weight:600; font-size:1rem; letter-spacing:-.01em;
+    margin-left:auto; color:var(--text); text-align:right}
+  .doc{max-width:42rem; margin:0 auto; padding:44px 24px 40px}
+  .doc h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
+    font-size:clamp(1.9rem,5.5vw,2.5rem); line-height:1.14; margin:0 0 12px}
+  .meta{color:var(--text-muted); font-size:.92rem; margin:0 0 6px}
+  .doc h2{font-family:var(--serif); font-weight:600; letter-spacing:-.01em;
+    font-size:1.42rem; line-height:1.3; margin:48px 0 14px; padding-top:26px; border-top:1px solid var(--border)}
+  .doc p{margin:0 0 18px}
+  .doc ul{margin:0 0 18px; padding-left:1.35em}
+  .doc li{margin:0 0 9px}
+  .doc strong{font-weight:700; color:var(--text)}
+  .doc em{color:var(--text-secondary)}
+  .doc hr{border:0; border-top:1px solid var(--border-strong); margin:34px 0}
+  .callout{background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent);
+    border-radius:14px; padding:20px 22px; margin:0 0 26px}
+  .callout > :first-child{margin-top:0}
+  .callout > :last-child{margin-bottom:0}
+  .doc-foot{max-width:42rem; margin:0 auto; padding:0 24px 64px}
+  .disclaimer{color:var(--text-muted); font-size:.9rem; font-style:italic;
+    border-top:1px solid var(--border); padding-top:22px; margin:0}
+  .backlink{display:inline-block; margin-top:28px; font-weight:600}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="home" href="/">&larr; getemmaus.app</a>
+    <span class="doc-title">Terms of Use</span>
+  </div>
+</header>
+
+<article class="doc">
+  <h1>Emmaus &mdash; End-User License Agreement &amp; Terms of Use</h1>
+  <p class="meta"><strong>Last updated: [EFFECTIVE DATE]</strong><br>
+  <strong>Effective date: [EFFECTIVE DATE]</strong></p>
+
+  <p>This End-User License Agreement and Terms of Use (&ldquo;<strong>Agreement</strong>&rdquo; or &ldquo;<strong>Terms</strong>&rdquo;) is a binding legal agreement between you (&ldquo;<strong>you</strong>&rdquo; or &ldquo;<strong>User</strong>&rdquo;) and <strong>[LEGAL ENTITY NAME]</strong> (&ldquo;<strong>Emmaus</strong>,&rdquo; &ldquo;<strong>we</strong>,&rdquo; &ldquo;<strong>us</strong>,&rdquo; or &ldquo;<strong>our</strong>&rdquo;), the developer of the Emmaus mobile application and related services (together, the &ldquo;<strong>App</strong>&rdquo;). Emmaus is based in the United States.</p>
+
+  <p>By downloading, installing, accessing, or using the App, by tapping &ldquo;I Agree,&rdquo; or by creating an account, you acknowledge that you have read, understood, and agree to be bound by this Agreement and by our <a href="/privacy/">Privacy Policy</a>, which is incorporated by reference. <strong>If you do not agree, do not download, install, or use the App.</strong></p>
+
+  <p>This Agreement incorporates the terms of <strong>Apple's Licensed Application End User License Agreement</strong> (the &ldquo;<strong>Apple Standard EULA</strong>,&rdquo; available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>) as the baseline license for the App. Where this Agreement and the Apple Standard EULA both apply, this Agreement supplements the Apple Standard EULA; to the extent of any direct conflict regarding Apple's minimum terms, the Apple Standard EULA controls as between you and Apple.</p>
+
+  <div class="callout">
+    <p><strong>IMPORTANT &mdash; PLEASE READ.</strong> Emmaus is a spiritual growth and discipleship companion. <strong>It is not a substitute for professional medical, psychological, psychiatric, crisis, legal, or financial care, and it is not a substitute for a pastor, church, or in-person community.</strong> The App includes features powered by artificial intelligence, which can produce inaccurate or inappropriate output. See Sections 6, 7, and 12. <strong>If you are in crisis or may harm yourself or others, call or text 988 (the U.S. Suicide &amp; Crisis Lifeline) or dial 911 (or your local emergency number).</strong></p>
+    <p>Section 14 contains a <strong>limitation of liability</strong>, and Section 16 contains provisions governing <strong>dispute resolution</strong>. Please review them carefully.</p>
+  </div>
+
+  <hr>
+
+  <h2>1. The App and Its Purpose</h2>
+  <p>Emmaus is an evangelical, non-denominational Christian discipleship and life-companion application. Rooted in the Parable of the Sower, its purpose is to help you grow in your relationship with God through daily Scripture, personalized devotionals, guided prayer and reflection (including a nightly examen and weekly review), Scripture memorization, goal and &ldquo;Future Self&rdquo; reflection, and a conversational AI companion (the &ldquo;<strong>AI Companion</strong>&rdquo; or &ldquo;<strong>Coach</strong>&rdquo;) that can remember details you share in order to walk alongside you over time.</p>
+  <p>The App's community features are <strong>solo and private</strong>. In Version 1 there is no user-to-user messaging, posting, or sharing of content between users; content you create stays private to your account.</p>
+
+  <h2>2. Eligibility and Age Requirements</h2>
+  <p>The App is rated for users <strong>17 years of age and older</strong> and is <strong>not directed to children under 13</strong>. By using the App you represent and warrant that you are at least 13 years old (and at least the age of majority in your jurisdiction, or that you have the consent of a parent or legal guardian if you are a minor above 13 in a jurisdiction that permits such use). We do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will delete it. See our Privacy Policy for details.</p>
+  <p>You also represent that you are not barred from using the App under the laws of the United States or any other applicable jurisdiction, and that your use complies with all applicable laws.</p>
+
+  <h2>3. License Grant and Scope of License</h2>
+  <p>Subject to your compliance with this Agreement, Emmaus grants you a <strong>limited, non-exclusive, non-transferable, non-sublicensable, revocable license</strong> to download and use one copy of the App on any Apple-branded product that you own or control, as permitted by the <strong>Usage Rules</strong> set forth in the Apple Media Services Terms and Conditions and the Apple Standard EULA.</p>
+  <p>This license does not allow you to use the App on any device you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time, except as expressly permitted by Apple's Usage Rules. The App is <strong>licensed, not sold</strong>, to you. Emmaus and its licensors retain all right, title, and interest in and to the App not expressly granted to you.</p>
+
+  <h2>4. Subscriptions, Free Trial, and Auto-Renewal</h2>
+  <p>The App is free to download and includes a limited free tier. Full access to premium features (the &ldquo;<strong>Subscription</strong>&rdquo;) &mdash; including the AI Companion with long-term memory, full conversational voice, the Future Self vision cascade, and unlimited devotionals, examens, and reflections &mdash; requires an <strong>auto-renewing subscription</strong> purchased through <strong>Apple In-App Purchase</strong>.</p>
+  <p><strong>4.1 Pricing and terms.</strong> Subscription options and prices are displayed in the App at the point of purchase in your local currency (for example, approximately <strong>$8.99 per month</strong> or <strong>$69.99 per year</strong>; the price shown in the App at purchase controls). New subscribers may be eligible for a <strong>7-day free trial</strong> offered as an introductory offer. The features included with each option are described on the subscription screen before you purchase.</p>
+  <p><strong>4.2 Free trial.</strong> If you start a free trial, you will not be charged during the trial period. <strong>Unless you cancel at least 24 hours before the end of the free trial, your subscription will automatically convert to a paid, auto-renewing subscription</strong> at the then-current price shown at purchase. Any unused portion of a free trial is forfeited when you purchase a subscription, where applicable.</p>
+  <p><strong>4.3 Auto-renewal (Apple's required disclosure).</strong> <em>Payment will be charged to your Apple Account at confirmation of purchase. The subscription automatically renews unless it is canceled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel subscriptions in your App Store account settings after purchase.</em></p>
+  <p><strong>4.4 Managing and canceling.</strong> You manage your subscription, turn off auto-renewal, and request cancellation through your <strong>Apple Account settings</strong>, not through Emmaus. To cancel, go to <strong>Settings &gt; [your name] &gt; Subscriptions</strong> on your device, or visit <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">https://apps.apple.com/account/subscriptions</a>. Deleting the App or deleting your Emmaus account does <strong>not</strong> cancel your Apple subscription &mdash; you must cancel it separately in your Apple Account settings, or it will keep renewing.</p>
+  <p><strong>4.5 Billing and refunds.</strong> All subscription purchases, billing, and payment processing are handled by <strong>Apple</strong>, subject to Apple's terms. Emmaus does not receive or store your full payment card details. Refunds, where available, are handled by Apple according to Apple's policies; requests should be directed to Apple (<a href="https://support.apple.com/billing" target="_blank" rel="noopener">https://support.apple.com/billing</a>). Except where required by law, subscription fees are non-refundable, and canceling mid-period stops future renewals but does not entitle you to a prorated refund of the current period.</p>
+  <p><strong>4.6 Changes to pricing or features.</strong> We may change subscription prices, features, or offerings. Where required, we will provide notice and, where required by Apple or applicable law, obtain your consent to a price increase before it takes effect. Continued use after a change takes effect constitutes acceptance of the change.</p>
+  <p><strong>4.7 Restore purchases.</strong> You can restore an active subscription across your devices using the <strong>Restore Purchases</strong> control in the App.</p>
+
+  <h2>5. Accounts and Security</h2>
+  <p>To use most features you must create an account using email and password, an email sign-in link, or <strong>Sign in with Apple</strong>. You agree to provide accurate information, to keep your credentials confidential, and to be responsible for all activity under your account. Notify us at <strong><a href="mailto:support@getemmaus.app">support@getemmaus.app</a></strong> if you suspect unauthorized use. You may delete your account at any time from within the App (see Section 10).</p>
+
+  <h2>6. Artificial Intelligence &mdash; How It Works and Its Limits</h2>
+  <p><strong>6.1 AI-generated content.</strong> The AI Companion and certain other features (devotionals, morning briefs, reflection prompts, weekly reviews, and voice responses) are generated using artificial-intelligence models operated by third-party providers, including <strong>Anthropic</strong> (which powers the AI Companion) and <strong>OpenAI</strong> (which powers voice text-to-speech, speech-to-text, and text embeddings). To generate responses, the content you share &mdash; including chat messages, prayer requests, journal and examen entries, goals, profile details, and remembered facts, and, for voice, audio you record &mdash; is transmitted to these providers to process your request. <strong>We obtain your explicit consent before any of your content is sent to these AI providers</strong>, and you can decline AI features and still use the App's non-AI functionality. See the Privacy Policy for details on sub-processors and data handling.</p>
+  <p><strong>6.2 AI output is not authoritative and may be wrong.</strong> AI-generated content is <strong>provided for reflection and encouragement only</strong>. It may be <strong>inaccurate, incomplete, outdated, or inappropriate</strong>, and it may misquote or misattribute Scripture. The AI Companion is a software tool. <strong>It is not God, the Holy Spirit, Jesus, a prophet, a pastor, a priest, a counselor, a therapist, a physician, a lawyer, or a financial advisor, and it does not speak for God or possess divine authority or special revelation.</strong> Nothing it produces is a substitute for Scripture itself, for your own prayer and discernment, for your local church, or for qualified professional advice. You are solely responsible for how you interpret and act on AI-generated content, and you should verify anything important &mdash; including Scripture references &mdash; independently.</p>
+  <p><strong>6.3 No professional or pastoral relationship.</strong> Using the App, including the AI Companion, does <strong>not</strong> create a doctor-patient, therapist-client, attorney-client, fiduciary, clergy-penitent, counseling, or any other professional or confidential relationship between you and Emmaus.</p>
+  <p><strong>6.4 Doctrinal posture.</strong> Emmaus is designed to reflect a grace-centered, historic, non-denominational evangelical Christian perspective and to hold secondary and disputed doctrinal matters with humility, pointing you to Scripture, prayer, and your local church rather than dictating a position. AI output nonetheless represents software output, not the official teaching of any church, denomination, or ministry, and should not be treated as doctrinal authority.</p>
+
+  <h2>7. Not Medical, Mental-Health, Crisis, or Professional Care</h2>
+  <p><strong>Emmaus is a spiritual-growth and wellness companion, not a medical device or a health-care, mental-health, crisis, legal, or financial service.</strong> The App does not diagnose, treat, cure, prevent, or mitigate any disease or condition, and it does not provide medical, psychological, psychiatric, clinical, crisis-intervention, legal, or financial advice. Nothing in the App is intended to be, or should be relied on as, a substitute for the advice of a qualified physician, licensed mental-health professional, attorney, financial advisor, or other licensed professional, or for the care and community of a local church.</p>
+  <p><strong>Always seek the advice of a qualified professional</strong> with any questions you have regarding a medical, psychological, legal, or financial matter, and <strong>never disregard or delay seeking professional advice</strong> because of something you read or received in the App.</p>
+  <p><strong>Crisis notice.</strong> The App is not a crisis service and cannot provide emergency help. <strong>If you are experiencing a medical or mental-health emergency, are in crisis, or may harm yourself or others, call or text 988 (the U.S. Suicide &amp; Crisis Lifeline), text HOME to 741741 (Crisis Text Line), or call 911 (or your local emergency number) immediately.</strong> If you are outside the United States, contact your local emergency services or a crisis line listed at <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</p>
+
+  <h2>8. Acceptable Use</h2>
+  <p>You agree to use the App lawfully and consistently with its purpose. You will <strong>not</strong>, and will not attempt to, and will not permit anyone else to:</p>
+  <ul>
+    <li>use the App for any unlawful, harmful, fraudulent, or abusive purpose, or in violation of any applicable law or regulation;</li>
+    <li>use the AI Companion to generate, solicit, or facilitate content that is unlawful, that sexually exploits or endangers minors, that promotes violence, self-harm, terrorism, or illegal activity, or that harasses, defames, or is hateful toward any person or group;</li>
+    <li>attempt to defeat, bypass, or manipulate the App's safety systems, content moderation, or crisis safeguards (including through prompt injection or &ldquo;jailbreak&rdquo; techniques);</li>
+    <li>reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except to the limited extent applicable law expressly permits despite this restriction;</li>
+    <li>copy, modify, translate, create derivative works of, distribute, sell, rent, lease, sublicense, or commercially exploit the App or its content, except as expressly permitted;</li>
+    <li>remove, obscure, or alter any proprietary notices;</li>
+    <li>use any automated means (bots, scrapers) to access the App, or interfere with, disrupt, overburden, or compromise the App, its servers, or its networks, or the security or integrity of the service;</li>
+    <li>probe, scan, or test the vulnerability of the App or circumvent any authentication, rate-limiting, or usage measures;</li>
+    <li>use the App to build a competing product or to train, fine-tune, or develop any machine-learning or AI model; or</li>
+    <li>misrepresent your identity or your affiliation with any person or entity.</li>
+  </ul>
+  <p>We may investigate and take appropriate action, including removing content, limiting or suspending features, and terminating access, for any violation of this Section.</p>
+
+  <h2>9. User Content</h2>
+  <p><strong>9.1 Your content.</strong> &ldquo;<strong>User Content</strong>&rdquo; means the content you create or submit in the App &mdash; for example, chat messages, prayer requests, journal and examen entries, goals, notes, remembered facts, and voice recordings. As between you and Emmaus, <strong>you retain ownership of your User Content.</strong></p>
+  <p><strong>9.2 License to operate the service.</strong> You grant Emmaus a limited, worldwide, non-exclusive, royalty-free license to host, store, process, transmit, display, and otherwise use your User Content <strong>solely to operate, provide, secure, and improve the App and its features for you</strong> &mdash; for example, to store your entries, to generate personalized AI responses (including transmitting your content to the AI sub-processors described in Section 6 and the Privacy Policy), and to maintain the AI Companion's long-term memory. This license exists only to run the service for you and ends when you delete the relevant content or your account, except for content we must retain to comply with law or as described in the Privacy Policy, and except for backups that are purged in the ordinary course. <strong>We do not sell your User Content, we do not use it for advertising, and we do not permit our AI sub-processors to use it to train their models</strong> (see the Privacy Policy).</p>
+  <p><strong>9.3 Your responsibility.</strong> You are solely responsible for your User Content and represent that you have the right to submit it and that it does not violate this Agreement or the rights of any third party. Do not submit content about other people that you do not have the right to share.</p>
+  <p><strong>9.4 Feedback.</strong> If you send us suggestions or feedback, you grant us a perpetual, irrevocable, royalty-free license to use it without restriction or obligation to you.</p>
+
+  <h2>10. Account Deletion and Data Rights</h2>
+  <p>You may <strong>delete your account and associated personal data from within the App</strong> at any time (in <strong>Settings &gt; Account &gt; Delete Account</strong>). Deletion permanently removes your profile, journals, examens, prayer requests, goals, AI Companion memories, reflections, and related data from our systems, subject to the retention and backup practices described in the Privacy Policy. You may also export your data and manage or erase the AI Companion's memories from within the App. <strong>Deleting your account does not cancel your Apple subscription</strong> &mdash; you must cancel it separately in your Apple Account settings (see Section 4.4). If you signed in with Apple, deleting your account will also revoke the associated Sign in with Apple tokens.</p>
+
+  <h2>11. Intellectual Property</h2>
+  <p>The App, including its software, design, user interface, text, graphics, logos, the &ldquo;Emmaus&rdquo; name and marks, curated content, prompts, and all related intellectual property, is owned by Emmaus or its licensors and is protected by United States and international intellectual-property laws. Except for the limited license in Section 3, no rights are granted to you.</p>
+  <p><strong>Scripture.</strong> The App bundles Bible translations that are in the <strong>public domain or freely licensed</strong> &mdash; the Berean Standard Bible (BSB, CC0), the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV) &mdash; together with certain openly licensed reference materials, which are attributed in the App's credits. Third-party trademarks and content are the property of their respective owners.</p>
+
+  <h2>12. Third-Party Services and External Content</h2>
+  <p>The App relies on and interoperates with third-party services, including <strong>Apple</strong> (App Store, In-App Purchase, Sign in with Apple), <strong>Supabase</strong> (hosting and data storage), <strong>Anthropic</strong> and <strong>OpenAI</strong> (AI processing), and <strong>RevenueCat</strong> (subscription management). Your use of those services may be subject to their own terms and policies. The App may also display links or resources (for example, crisis hotlines) operated by third parties. Emmaus does not control and is not responsible for third-party services or content, and providing a link or resource is not an endorsement or a guarantee of availability, accuracy, or outcome. Any external crisis resources are provided for convenience; you are responsible for contacting appropriate emergency or professional help.</p>
+
+  <h2>13. Disclaimer of Warranties</h2>
+  <p><strong>THE APP AND ALL CONTENT AND FEATURES, INCLUDING AI-GENERATED CONTENT, ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE,&rdquo; WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.</strong> To the maximum extent permitted by applicable law, Emmaus and its licensors and suppliers <strong>disclaim all warranties</strong>, whether express, implied, statutory, or otherwise, including any implied warranties of merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy, and non-infringement.</p>
+  <p>Emmaus does <strong>not</strong> warrant that the App will be uninterrupted, secure, error-free, or free of harmful components; that defects will be corrected; that content (including AI output and Scripture references) will be accurate, reliable, complete, or appropriate; or that the App will meet your requirements or produce any particular spiritual, emotional, health, or life outcome. <strong>No advice or information, whether oral or written, obtained from Emmaus or through the App, creates any warranty not expressly stated in this Agreement.</strong> Because AI systems can produce errors, you assume responsibility for evaluating and relying on any output.</p>
+  <p>Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.</p>
+
+  <h2>14. Limitation of Liability</h2>
+  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL EMMAUS OR ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, OR SUPPLIERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUES, DATA, GOODWILL, OR OTHER INTANGIBLE LOSSES, OR FOR ANY PERSONAL INJURY OR EMOTIONAL DISTRESS, ARISING OUT OF OR RELATING TO YOUR USE OF, OR INABILITY TO USE, THE APP OR ANY AI-GENERATED CONTENT</strong>, whether based on warranty, contract, tort (including negligence), statute, or any other legal theory, and whether or not Emmaus has been advised of the possibility of such damages.</p>
+  <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL AGGREGATE LIABILITY OF EMMAUS ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID EMMAUS FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE LIABILITY, OR (B) TWENTY U.S. DOLLARS (US $20.00).</strong></p>
+  <p>These limitations are a fundamental basis of the bargain between you and Emmaus. Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above may not apply to you; in such cases, Emmaus&rsquo; liability is limited to the fullest extent permitted by law. <strong>Nothing in this Agreement limits liability that cannot be limited by law</strong>, including, where applicable, liability for gross negligence, willful misconduct, fraud, or personal injury caused by our negligence.</p>
+
+  <h2>15. Indemnification</h2>
+  <p>To the extent permitted by applicable law, you agree to indemnify, defend, and hold harmless Emmaus and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with (a) your misuse of the App, (b) your violation of this Agreement or applicable law, or (c) your violation of the rights of any third party.</p>
+
+  <h2>16. Governing Law and Dispute Resolution</h2>
+  <p>This Agreement is governed by the laws of the <strong>State of [GOVERNING-LAW STATE], United States</strong>, without regard to its conflict-of-laws principles, except that the foregoing does not affect Apple's separate terms with you. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p>
+  <p>Subject to any mandatory rights you have under local consumer-protection law, you and Emmaus agree that any dispute arising out of or relating to this Agreement or the App will be resolved exclusively in the state or federal courts located in <strong>[COUNTY/CITY, GOVERNING-LAW STATE]</strong>, and you consent to the personal jurisdiction of those courts, unless the parties otherwise agree in writing to arbitration. <em>[NOTE TO DEVELOPER: if you intend to require arbitration and/or a class-action waiver, insert a conspicuous arbitration clause here after legal review; such clauses have specific notice, opt-out, and enforceability requirements.]</em></p>
+
+  <h2>17. Termination</h2>
+  <p>This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically, without notice, if you fail to comply with any of its terms. We may also suspend or terminate your access, in whole or in part, at any time, with or without cause, including to protect the safety or integrity of the service or to comply with law. Upon termination, you must stop using the App and delete all copies. Sections that by their nature should survive termination &mdash; including Sections 6 through 16 and 18 &mdash; will survive.</p>
+
+  <h2>18. Apple-Specific Terms (Required)</h2>
+  <p>You and Emmaus acknowledge that this Agreement is concluded between you and Emmaus only, and <strong>not with Apple</strong>, and that <strong>Emmaus, not Apple, is solely responsible for the App and its content</strong>. The following terms apply with respect to your use of the App on Apple devices:</p>
+  <ul>
+    <li><strong>Scope of license.</strong> The license granted to you for the App is limited to a non-transferable license to use the App on any Apple-branded products that you own or control, as permitted by the Usage Rules in the Apple Media Services Terms and Conditions, except that the App may be accessed and used by other accounts associated with you via Family Sharing or volume purchasing, where enabled.</li>
+    <li><strong>Maintenance and support.</strong> Emmaus is solely responsible for providing any maintenance and support services for the App. <strong>Apple has no obligation whatsoever to furnish any maintenance and support services</strong> with respect to the App. Contact support at <strong><a href="mailto:support@getemmaus.app">support@getemmaus.app</a></strong>.</li>
+    <li><strong>Warranty.</strong> Emmaus is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed. In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and <strong>Apple will refund the App's purchase price (if any) to you</strong>; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App, and any other claims, losses, liabilities, damages, costs, or expenses attributable to any failure to conform to any warranty will be Emmaus&rsquo; sole responsibility.</li>
+    <li><strong>Product claims.</strong> Emmaus, not Apple, is responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of it, including product-liability claims, any claim that the App fails to conform to any applicable legal or regulatory requirement, claims arising under consumer-protection, privacy, or similar legislation (including in connection with the App's use of AI and machine-learning features), and intellectual-property claims, as further set out in this Agreement.</li>
+    <li><strong>Intellectual-property claims.</strong> In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual-property rights, <strong>Emmaus, not Apple, will be solely responsible</strong> for the investigation, defense, settlement, and discharge of any such claim.</li>
+    <li><strong>Legal compliance.</strong> You represent and warrant that you are not located in a country subject to a U.S. Government embargo or designated as a &ldquo;terrorist supporting&rdquo; country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+    <li><strong>Third-party terms.</strong> You must comply with applicable third-party terms of agreement when using the App.</li>
+    <li><strong>Third-party beneficiary.</strong> You and Emmaus acknowledge and agree that <strong>Apple, and Apple's subsidiaries, are third-party beneficiaries of this Agreement</strong>, and that, upon your acceptance of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary.</li>
+  </ul>
+
+  <h2>19. Changes to This Agreement</h2>
+  <p>We may update this Agreement from time to time. When we make material changes, we will update the &ldquo;Last updated&rdquo; date above and, where appropriate, provide notice in the App. Your continued use of the App after the changes take effect constitutes acceptance of the updated Agreement. If you do not agree to the changes, stop using the App and delete your account.</p>
+
+  <h2>20. General</h2>
+  <p>This Agreement, together with the Privacy Policy and the Apple Standard EULA, is the entire agreement between you and Emmaus regarding the App and supersedes any prior agreements. If any provision is held unenforceable, the remaining provisions will remain in full force, and the unenforceable provision will be modified to the minimum extent necessary to make it enforceable. Our failure to enforce any provision is not a waiver. You may not assign this Agreement without our consent; we may assign it in connection with a merger, acquisition, or sale of assets. Section headings are for convenience only.</p>
+
+  <h2>21. Contact</h2>
+  <p>Questions about this Agreement may be sent to:</p>
+  <p><strong>[LEGAL ENTITY NAME]</strong><br>
+  Email: <strong><a href="mailto:support@getemmaus.app">support@getemmaus.app</a></strong><br>
+  [MAILING ADDRESS]</p>
+</article>
+
+<div class="doc-foot">
+  <p class="disclaimer">This document is a template prepared for App Store submission and should be reviewed by qualified legal counsel and completed with the bracketed information (legal entity name, governing-law state, venue, mailing address, and effective date) before publication. It is not legal advice.</p>
+  <a class="backlink" href="/">&larr; Back to getemmaus.app</a>
+</div>
+
+</body>
+</html>
