@@ -1,0 +1,54 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Emmaus — "The Road at Dawn": a path through the fields toward the rising
+       sun (Luke 24). Palette: dawn sky, sage fields, warm ivory road/sun. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FCEFD6"/>
+      <stop offset="46%" stop-color="#F5DDAE"/>
+      <stop offset="60%" stop-color="#EFD08A"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E9152"/>
+      <stop offset="100%" stop-color="#42603A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9E8"/>
+      <stop offset="55%" stop-color="#FCEFC6"/>
+      <stop offset="100%" stop-color="#FCEFC6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FBF6EE"/>
+      <stop offset="100%" stop-color="#FFF6DE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1024" height="614" fill="url(#sky)"/>
+  <!-- sun bloom + disc on the horizon -->
+  <circle cx="512" cy="596" r="330" fill="url(#sun)"/>
+  <circle cx="512" cy="588" r="96" fill="#FFF7E2"/>
+
+  <!-- fields -->
+  <rect y="600" width="1024" height="424" fill="url(#field)"/>
+  <!-- gentle horizon line highlight -->
+  <rect y="596" width="1024" height="10" fill="#E8D9A8" opacity="0.55"/>
+
+  <!-- the road: winding from the near foreground to the sun -->
+  <path
+    d="M 330 1024
+       C 420 900, 620 840, 566 740
+       C 530 672, 470 660, 498 612
+       L 526 612
+       C 522 656, 586 668, 610 726
+       C 646 822, 520 918, 606 1024
+       Z"
+    fill="url(#road)"/>
+
+  <!-- soil furrows echoing the original mark -->
+  <g stroke="#35502F" stroke-width="6" stroke-linecap="round" opacity="0.32">
+    <path d="M96 760 Q 240 738 356 752" fill="none"/>
+    <path d="M700 796 Q 830 776 936 792" fill="none"/>
+    <path d="M120 900 Q 240 878 330 892" fill="none"/>
+    <path d="M716 928 Q 840 906 938 922" fill="none"/>
+  </g>
+</svg>

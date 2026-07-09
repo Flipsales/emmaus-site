@@ -1,0 +1,63 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Emmaus — "The Road at Dawn", pre-dawn. Darkened so WHITE text reads on it.
+       Palette family of assets/icon.svg but far darker: near-black warm sky
+       falling through deep soil brown into a glowing dawn band at the horizon,
+       dark rolling fields, and a faint warm-ivory road toward the light. -->
+  <defs>
+    <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#171310"/>
+      <stop offset="38%" stop-color="#211A14"/>
+      <stop offset="70%" stop-color="#2E251C"/>
+      <stop offset="90%" stop-color="#EFD08A"/>
+      <stop offset="100%" stop-color="#F5DDAE"/>
+    </linearGradient>
+    <radialGradient id="hSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7E4B2" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#EFD08A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#EFD08A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hField" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A3B24"/>
+      <stop offset="100%" stop-color="#1C2818"/>
+    </linearGradient>
+    <linearGradient id="hHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243420"/>
+      <stop offset="100%" stop-color="#1A2416"/>
+    </linearGradient>
+    <linearGradient id="hRoad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#FBF6E6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1920" height="700" fill="url(#hSky)"/>
+  <!-- soft dawn bloom on the horizon center -->
+  <ellipse cx="960" cy="700" rx="760" ry="360" fill="url(#hSun)"/>
+  <!-- thin luminous horizon band -->
+  <rect y="694" width="1920" height="12" fill="#F1D699" opacity="0.5"/>
+
+  <!-- dark rolling fields -->
+  <rect y="700" width="1920" height="380" fill="url(#hField)"/>
+  <!-- a rolling hill silhouette overlapping the horizon -->
+  <path d="M0 720 C 420 686, 760 712, 1100 700 C 1440 688, 1720 716, 1920 704 L 1920 780 L 0 780 Z"
+        fill="url(#hHill)" opacity="0.9"/>
+  <path d="M0 830 C 520 800, 980 838, 1400 818 C 1650 806, 1820 826, 1920 820 L 1920 1080 L 0 1080 Z"
+        fill="#1B2616"/>
+
+  <!-- the road: a faint warm ribbon winding from the foreground to the light -->
+  <path d="M 866 1080
+           C 980 940, 900 852, 948 706
+           L 972 706
+           C 1030 852, 1140 940, 1054 1080
+           Z"
+        fill="url(#hRoad)" opacity="0.35"/>
+
+  <!-- soil furrows echoing the original mark, kept very subtle in the dark -->
+  <g stroke="#3A2E22" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.25">
+    <path d="M120 900 Q 360 872 560 892"/>
+    <path d="M1360 908 Q 1600 880 1820 900"/>
+    <path d="M180 1000 Q 420 972 620 992"/>
+    <path d="M1300 1004 Q 1560 976 1800 996"/>
+  </g>
+</svg>

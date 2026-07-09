@@ -1,0 +1,59 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Emmaus — brighter mid-tone dawn card, same family as assets/icon.svg.
+       Mid-luminance so white/15 glass pills read on it: warm dawn sky in the
+       upper third, sun bloom on the horizon, sage fields below, faint road. -->
+  <defs>
+    <linearGradient id="cSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5DDAE"/>
+      <stop offset="60%" stop-color="#F0D294"/>
+      <stop offset="100%" stop-color="#EFD08A"/>
+    </linearGradient>
+    <radialGradient id="cSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF6DC" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#FCEFC6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FCEFC6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cField" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E9152"/>
+      <stop offset="55%" stop-color="#557345"/>
+      <stop offset="100%" stop-color="#42603A"/>
+    </linearGradient>
+    <linearGradient id="cHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#63864A"/>
+      <stop offset="100%" stop-color="#4C6A3D"/>
+    </linearGradient>
+    <linearGradient id="cRoad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#F7F0E2"/>
+      <stop offset="100%" stop-color="#FBF6E6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky (upper third) -->
+  <rect width="900" height="400" fill="url(#cSky)"/>
+  <!-- sun bloom on the horizon center -->
+  <ellipse cx="450" cy="400" rx="420" ry="240" fill="url(#cSun)"/>
+  <!-- luminous horizon band -->
+  <rect y="394" width="900" height="10" fill="#EFDCA6" opacity="0.6"/>
+
+  <!-- sage fields (lower two thirds) -->
+  <rect y="400" width="900" height="800" fill="url(#cField)"/>
+  <!-- gentle rolling hill overlapping the horizon -->
+  <path d="M0 424 C 220 398, 460 418, 680 404 C 800 396, 860 410, 900 406 L 900 470 L 0 470 Z"
+        fill="url(#cHill)" opacity="0.85"/>
+
+  <!-- faint road winding from the foreground up to the light -->
+  <path d="M 388 1200
+           C 470 1000, 400 800, 438 406
+           L 462 406
+           C 500 800, 560 1000, 512 1200
+           Z"
+        fill="url(#cRoad)" opacity="0.4"/>
+
+  <!-- soil furrows echoing the original mark -->
+  <g stroke="#37512F" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.3">
+    <path d="M70 720 Q 220 698 330 714"/>
+    <path d="M600 760 Q 740 738 850 754"/>
+    <path d="M90 940 Q 230 918 330 934"/>
+    <path d="M610 980 Q 760 958 860 974"/>
+  </g>
+</svg>
