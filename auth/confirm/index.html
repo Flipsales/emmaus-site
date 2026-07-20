@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email confirmed — Emmaus</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Your Emmaus email address is confirmed.">
+<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB;
+    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#6F6152;
+    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B; --accent-text:#8A5E12;
+    --danger:#8A3324;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --focus:rgba(94,127,70,.5);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#171310; --surface:#211B15; --border:#362D23;
+      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
+      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C; --accent-text:#E0B15C;
+      --danger:#E39385;
+      --focus:rgba(159,187,134,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; min-height:100svh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.7;
+    padding:32px 24px; -webkit-font-smoothing:antialiased}
+  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:8px}
+  .card{width:100%; max-width:28rem; text-align:center}
+  .orb{width:76px; height:76px; margin:0 auto 26px; border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, #F4E4C3 0%, #D8C79C 42%, #9BB183 100%);
+    box-shadow:0 0 40px rgba(198,138,43,.30)}
+  h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
+    font-size:clamp(1.75rem,6vw,2.2rem); line-height:1.16; margin:0 0 12px}
+  p{margin:0 0 18px; color:var(--text-secondary); font-size:1.03rem}
+  .steps{background:var(--surface); border:1px solid var(--border); border-radius:16px;
+    padding:18px 22px; margin:26px 0 22px; text-align:left}
+  .steps ol{margin:0; padding-left:1.25em; color:var(--text-secondary)}
+  .steps li{margin:0 0 8px}
+  .steps li:last-child{margin-bottom:0}
+  .steps strong{color:var(--text)}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:50px; padding:0 26px; border-radius:999px; border:0; cursor:pointer;
+    background:var(--primary); color:#fff; font-family:var(--sans); font-size:1.02rem;
+    font-weight:600; text-decoration:none; width:100%}
+  .btn:hover{background:var(--primary-hover)}
+  @media (prefers-color-scheme:dark){ .btn{color:#12100D} }
+  .footnote{margin:22px 0 0; font-size:.9rem; color:var(--text-muted)}
+  .footnote a{color:var(--primary)}
+  #err{display:none; color:var(--danger); font-weight:600}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="orb" aria-hidden="true"></div>
+
+    <div id="ok">
+      <h1>You&rsquo;re confirmed</h1>
+      <p>Your email address is verified. Everything&rsquo;s ready &mdash; head back to Emmaus to begin.</p>
+      <div class="steps">
+        <ol>
+          <li>Return to the <strong>Emmaus</strong> app on your phone.</li>
+          <li>Sign in with your email and password.</li>
+          <li>That&rsquo;s it &mdash; your walk begins.</li>
+        </ol>
+      </div>
+      <a class="btn" href="https://apps.apple.com/app/id6788956467">Open the App Store</a>
+      <p class="footnote">Don&rsquo;t have the app on this device? Install it, then sign in with the address you just confirmed.</p>
+    </div>
+
+    <div id="bad" hidden>
+      <h1>This link has expired</h1>
+      <p id="err"></p>
+      <p>Confirmation links are good for a short while. Open Emmaus and tap <strong>Sign up</strong> again with the same address to get a fresh one.</p>
+      <a class="btn" href="https://apps.apple.com/app/id6788956467">Open the App Store</a>
+      <p class="footnote">Still stuck? Email <a href="mailto:support@getemmaus.app">support@getemmaus.app</a> and we&rsquo;ll sort it out.</p>
+    </div>
+  </main>
+
+<script>
+(function () {
+  // GoTrue uses the implicit flow, so it appends real access/refresh tokens to
+  // the fragment. Read what we need, then scrub them from the address bar so
+  // they can't be shoulder-surfed, shared, or left in browser history.
+  var hash = window.location.hash.replace(/^#/, '');
+  var params = new URLSearchParams(hash);
+  var error = params.get('error_description') || params.get('error');
+
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState(null, '', window.location.pathname);
+  }
+
+  if (error) {
+    document.getElementById('ok').hidden = true;
+    var bad = document.getElementById('bad');
+    bad.hidden = false;
+    var el = document.getElementById('err');
+    el.textContent = decodeURIComponent(String(error).replace(/\+/g, ' '));
+    el.style.display = 'block';
+  }
+
+  // NOTE: once 1.0.1 (custom scheme app.getemmaus://) is live on the App Store,
+  // add the scheme handoff here so updated users land straight back in the app,
+  // already signed in. Doing it before then makes 1.0 users see an
+  // "Cannot Open Page" dialog, which is worse than this page.
+})();
+</script>
+</body>
+</html>

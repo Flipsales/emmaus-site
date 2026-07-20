@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose a new password — Emmaus</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Set a new password for your Emmaus account.">
+<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB; --border-strong:#D9CBB4;
+    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#6F6152;
+    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B;
+    --danger:#8A3324; --on-primary:#ffffff;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --focus:rgba(94,127,70,.5);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#171310; --surface:#211B15; --border:#362D23; --border-strong:#4A3E31;
+      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
+      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C;
+      --danger:#E39385; --on-primary:#12100D;
+      --focus:rgba(159,187,134,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; min-height:100svh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.7;
+    padding:32px 24px; -webkit-font-smoothing:antialiased}
+  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:8px}
+  .card{width:100%; max-width:26rem; text-align:center}
+  .orb{width:70px; height:70px; margin:0 auto 24px; border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, #F4E4C3 0%, #D8C79C 42%, #9BB183 100%);
+    box-shadow:0 0 40px rgba(198,138,43,.30)}
+  h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
+    font-size:clamp(1.6rem,5.5vw,2.05rem); line-height:1.18; margin:0 0 10px}
+  p{margin:0 0 18px; color:var(--text-secondary); font-size:1rem}
+  label{display:block; text-align:left; font-size:.9rem; font-weight:600;
+    color:var(--text-secondary); margin:0 0 6px}
+  input[type=password]{width:100%; min-height:50px; padding:0 16px; margin:0 0 16px;
+    border-radius:14px; border:1px solid var(--border-strong); background:var(--surface);
+    color:var(--text); font-family:var(--sans); font-size:1.02rem}
+  input[type=password]::placeholder{color:var(--text-muted)}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:50px; padding:0 26px; border-radius:999px; border:0; cursor:pointer;
+    background:var(--primary); color:var(--on-primary); font-family:var(--sans);
+    font-size:1.02rem; font-weight:600; text-decoration:none; width:100%}
+  .btn:hover:not(:disabled){background:var(--primary-hover)}
+  .btn:disabled{opacity:.6; cursor:default}
+  .msg{margin:0 0 16px; font-size:.95rem; font-weight:600; text-align:left}
+  .msg.error{color:var(--danger)}
+  .footnote{margin:20px 0 0; font-size:.88rem; color:var(--text-muted)}
+  .footnote a{color:var(--primary)}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="orb" aria-hidden="true"></div>
+
+    <!-- Set-password form -->
+    <section id="form-view" hidden>
+      <h1>Choose a new password</h1>
+      <p>Pick something you&rsquo;ll remember. At least 6 characters.</p>
+      <p id="form-msg" class="msg error" hidden></p>
+      <form id="reset-form" novalidate>
+        <label for="pw">New password</label>
+        <input id="pw" type="password" autocomplete="new-password" placeholder="New password" required>
+        <label for="pw2">Confirm new password</label>
+        <input id="pw2" type="password" autocomplete="new-password" placeholder="Confirm new password" required>
+        <button id="submit" class="btn" type="submit">Set password</button>
+      </form>
+    </section>
+
+    <!-- Success -->
+    <section id="done-view" hidden>
+      <h1>Your password is set</h1>
+      <p>Open Emmaus and sign in with your new password.</p>
+      <a class="btn" href="https://apps.apple.com/app/id6788956467">Open the App Store</a>
+    </section>
+
+    <!-- Expired / invalid link -->
+    <section id="bad-view" hidden>
+      <h1>This link has expired</h1>
+      <p id="bad-msg">Password links are good for a short while, and only once.</p>
+      <p>Open Emmaus, tap <strong>Forgot password</strong>, and we&rsquo;ll send a fresh one.</p>
+      <a class="btn" href="https://apps.apple.com/app/id6788956467">Open the App Store</a>
+    </section>
+
+    <p class="footnote">Need a hand? <a href="mailto:support@getemmaus.app">support@getemmaus.app</a></p>
+  </main>
+
+<script>
+(function () {
+  var SUPABASE_URL = 'https://xfyknijqizysfrplsyvt.supabase.co';
+  // Publishable (anon) key — safe in client code by design; it is already
+  // shipped inside the iOS app bundle. It grants nothing on its own.
+  var SUPABASE_KEY = 'sb_publishable_7PTONFXLYLlXLMRnZ3EkrQ_QW5haJNg';
+
+  var show = function (id) {
+    ['form-view', 'done-view', 'bad-view'].forEach(function (v) {
+      document.getElementById(v).hidden = (v !== id);
+    });
+  };
+  var fail = function (text) {
+    if (text) document.getElementById('bad-msg').textContent = text;
+    show('bad-view');
+  };
+
+  // GoTrue implicit flow puts the recovery tokens in the fragment.
+  var params = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+  var accessToken = params.get('access_token');
+  var error = params.get('error_description') || params.get('error');
+
+  // Scrub the tokens from the address bar before anything else renders.
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState(null, '', window.location.pathname);
+  }
+
+  if (error) {
+    fail(decodeURIComponent(String(error).replace(/\+/g, ' ')));
+    return;
+  }
+  if (!accessToken) {
+    fail('This link is missing its security token, so we can’t verify it.');
+    return;
+  }
+
+  show('form-view');
+
+  var form = document.getElementById('reset-form');
+  var btn = document.getElementById('submit');
+  var msg = document.getElementById('form-msg');
+
+  var showError = function (text) {
+    msg.textContent = text;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.textContent = 'Set password';
+  };
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    msg.hidden = true;
+
+    var pw = document.getElementById('pw').value;
+    var pw2 = document.getElementById('pw2').value;
+
+    if (pw.length < 6) return showError('Please choose a password with at least 6 characters.');
+    if (pw !== pw2) return showError('Those passwords don’t match yet. Please re-enter them.');
+
+    btn.disabled = true;
+    btn.textContent = 'Setting…';
+
+    fetch(SUPABASE_URL + '/auth/v1/user', {
+      method: 'PUT',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': 'Bearer ' + accessToken,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ password: pw })
+    }).then(function (res) {
+      return res.json().then(function (body) { return { ok: res.ok, status: res.status, body: body }; });
+    }).then(function (r) {
+      if (r.ok) { show('done-view'); return; }
+      var m = String((r.body && (r.body.msg || r.body.message || r.body.error_description)) || '');
+      // GoTrue answers a stale/garbled recovery token with 401 or 403 bad_jwt.
+      if (r.status === 401 || r.status === 403 || /expired|invalid/i.test(m)) return fail();
+      if (/same.*password|different from the old/i.test(m)) {
+        return showError('That’s the same as your current password. Please choose a new one.');
+      }
+      if (/at least|should be/i.test(m)) {
+        return showError('Please choose a password with at least 6 characters.');
+      }
+      showError('We couldn’t update your password. Please try again.');
+    }).catch(function () {
+      showError('We couldn’t reach Emmaus. Check your connection and try again.');
+    });
+  });
+})();
+</script>
+</body>
+</html>
