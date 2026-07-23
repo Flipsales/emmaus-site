@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're invited — Emmaus</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
+<!-- Open Graph so the link unfurls warmly in Messages / WhatsApp / email -->
+<meta property="og:title" content="Walk with God, together — on Emmaus">
+<meta property="og:description" content="A friend invited you to walk alongside them. Emmaus is a gentle daily companion for prayer, Scripture, and growth.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --bg:#FBF6EE; --text:#2A2018; --text-secondary:#5C4F42;
+    --primary:#4A6B3C; --primary-hover:#3A5230; --accent-text:#8A5E12;
+    --surface:rgba(255,255,255,.62); --border:rgba(64,54,43,.14);
+    --dawn:linear-gradient(165deg,#FCEFD6 0%,#F3D9AE 42%,#DCC7A6 100%);
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --focus:rgba(94,127,70,.5);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#171310; --text:#F3EADB; --text-secondary:#CBBBA6;
+      --primary:#8FB07A; --primary-hover:#A3C08E; --accent-text:#E0B15C;
+      --surface:rgba(255,255,255,.06); --border:rgba(255,255,255,.10);
+      --dawn:linear-gradient(165deg,#241d2e 0%,#31271f 55%,#3f2e1e 100%);
+      --focus:rgba(159,187,134,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--dawn); color:var(--text); font-family:var(--sans); text-align:center; padding:24px}
+  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:6px}
+  .box{max-width:31rem; width:100%}
+  .scene{width:118px; height:118px; margin:0 auto 26px; display:block; filter:drop-shadow(0 10px 24px rgba(64,54,43,.18))}
+  .eyebrow{font-family:var(--sans); font-size:.78rem; font-weight:600; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--accent-text); margin:0 0 12px}
+  h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
+    font-size:clamp(1.9rem,6.4vw,2.7rem); line-height:1.12; margin:0 0 14px}
+  h1 .name{color:var(--primary)}
+  p.lead{color:var(--text-secondary); font-size:1.08rem; margin:0 0 30px; line-height:1.6}
+  .btn{display:block; width:100%; max-width:22rem; margin:0 auto; background:var(--primary); color:#fff;
+    font-family:var(--sans); font-size:1.02rem; font-weight:600; padding:15px 26px; border-radius:15px;
+    text-decoration:none; box-shadow:0 8px 24px rgba(64,54,43,.14); transition:background .15s}
+  @media (prefers-color-scheme:dark){.btn{color:#171310}}
+  .btn:hover{background:var(--primary-hover)}
+  .btn.secondary{background:var(--surface); color:var(--text); border:1px solid var(--border);
+    box-shadow:none; margin-top:12px; font-weight:600}
+  .fine{margin:22px auto 0; font-size:.86rem; color:var(--text-secondary); max-width:24rem; line-height:1.5}
+  .verse{margin:30px auto 0; font-family:var(--serif); font-style:italic; font-size:1rem;
+    color:var(--text-secondary); max-width:26rem; line-height:1.6}
+</style>
+</head>
+<body>
+  <div class="box">
+    <svg class="scene" viewBox="0 0 120 120" role="img" aria-label="A road toward a rising sun.">
+      <defs><clipPath id="c"><rect width="120" height="120" rx="26"/></clipPath></defs>
+      <g clip-path="url(#c)">
+        <rect width="120" height="74" fill="#FCEFD6"/>
+        <circle cx="60" cy="70" r="46" fill="#FCEFC6" opacity=".7"/>
+        <circle cx="60" cy="68" r="16" fill="#FFF7E2"/>
+        <rect y="70" width="120" height="50" fill="#4A6B3C"/>
+        <path d="M50 120 C58 100, 70 94, 63 82 L67 82 C74 94, 72 104, 74 120 Z" fill="#FBF6EE"/>
+      </g>
+    </svg>
+
+    <p class="eyebrow">An invitation</p>
+    <h1 id="headline">Walk with God, together</h1>
+    <p class="lead" id="lead">A friend invited you to walk alongside them on Emmaus &mdash; a gentle daily companion for prayer, Scripture, and becoming who God made you to be.</p>
+
+    <a class="btn" id="store" href="https://apps.apple.com/app/id6788956467">Get Emmaus &mdash; free</a>
+    <a class="btn secondary" id="openapp" href="#" hidden>Already have Emmaus? Open it</a>
+
+    <p class="fine">Free to download. After you install Emmaus and sign in, open this link again to connect.</p>
+    <p class="verse">&ldquo;Come, follow me,&rdquo; Jesus said. &mdash; Mark 1:17</p>
+  </div>
+
+<script>
+(function () {
+  // Token travels as ?c=<token> (canonical), with a path/hash fallback for safety.
+  var params = new URLSearchParams(location.search);
+  var token = params.get('c');
+  if (!token) {
+    var m = location.pathname.match(/\/i\/([^\/?#]+)/);
+    if (m) token = m[1];
+  }
+  if (!token && location.hash.length > 1) token = location.hash.slice(1);
+
+  if (token) {
+    // Fallback path for an already-installed app whose Universal Link didn't fire.
+    var open = document.getElementById('openapp');
+    open.href = 'app.getemmaus://i/?c=' + encodeURIComponent(token);
+    open.hidden = false;
+
+    // Personalize from the public, minimal preview RPC (name + label only). Best-effort.
+    var SUPABASE_URL = 'https://xfyknijqizysfrplsyvt.supabase.co';
+    var ANON = 'sb_publishable_7PTONFXLYLlXLMRnZ3EkrQ_QW5haJNg';
+    fetch(SUPABASE_URL + '/rest/v1/rpc/get_invite_preview', {
+      method: 'POST',
+      headers: { 'apikey': ANON, 'Authorization': 'Bearer ' + ANON, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ p_token: token })
+    })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (rows) {
+        var row = rows && rows[0];
+        if (!row) return;
+        var name = (row.inviter_name || '').trim();
+        if (name && row.valid) {
+          var first = name.split(' ')[0];
+          document.getElementById('headline').innerHTML =
+            '<span class="name">' + escapeHtml(first) + '</span> invited you to walk together';
+          document.getElementById('lead').textContent =
+            first + ' is walking with God on Emmaus and wants you alongside them — a gentle daily companion for prayer, Scripture, and growth.';
+        } else if (!row.valid) {
+          document.getElementById('lead').textContent =
+            'This invitation has expired, but you’re still welcome. Download Emmaus and begin the walk.';
+        }
+      })
+      .catch(function () { /* keep the generic, warm default */ });
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+})();
+</script>
+</body>
+</html>
