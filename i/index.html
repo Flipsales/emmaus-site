@@ -96,6 +96,18 @@
     open.href = 'app.getemmaus://i/?c=' + encodeURIComponent(token);
     open.hidden = false;
 
+    // With a live token, "Open it" leads and the store button steps back. The
+    // asymmetry is deliberate: an INSTALLED user who taps "Get Emmaus" is sent
+    // to the App Store, taps OPEN there, and the app cold-launches with no URL
+    // — the invite silently dies, which is the exact failure this page exists
+    // to prevent. A NOT-installed user who taps "Open it" just gets an alert
+    // and the store button is right below. One mistake is invisible and loses
+    // the connection; the other is obvious and costs a second tap.
+    var store = document.getElementById('store');
+    open.className = 'btn';
+    store.className = 'btn secondary';
+    store.parentNode.insertBefore(open, store);
+
     // Personalize from the public, minimal preview RPC (name + label only). Best-effort.
     var SUPABASE_URL = 'https://xfyknijqizysfrplsyvt.supabase.co';
     var ANON = 'sb_publishable_7PTONFXLYLlXLMRnZ3EkrQ_QW5haJNg';
