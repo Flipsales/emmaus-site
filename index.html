@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emmaus — Walk with God</title>
-<meta name="description" content="You wanted to walk with God — somewhere it became homework. Emmaus is a companion, not a checklist: the whole Bible one chapter at a time, a voice to talk to, and one person walking with you. No streaks. No guilt. Free on the App Store.">
+<meta name="description" content="What if Jesus has been walking with you — and you’ve been missing Him? That’s Luke 24. Emmaus helps you recognize Him and walk with Him through ordinary days: the whole Bible one chapter at a time, a voice to talk to, one person walking beside you. Free on the App Store.">
 <link rel="canonical" href="https://getemmaus.app/">
 <meta property="og:title" content="Emmaus — Walk with God">
 <meta property="og:description" content="We don't have Bible plans. The plan is the Bible. A companion for the road — no streaks, no guilt, no 'behind'.">
@@ -62,10 +62,10 @@
     background:linear-gradient(170deg,#fcefd6 0%,#f3d9ae 46%,#e9d3ab 72%,var(--bg) 100%)}
   .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
     padding:150px 0 90px;min-height:88vh}
-  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,5vw,62px);
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.2vw,52px);
     line-height:1.12;letter-spacing:-.01em}
   .hero h1 .quiet{color:#7a6748}
-  .hero p.lead{margin-top:22px;font-size:clamp(16px,1.6vw,19px);color:#4d4136;max-width:46ch}
+  .hero p.lead{margin-top:18px;font-size:clamp(15.5px,1.5vw,18px);color:#4d4136;max-width:52ch}
   .hero .ctas{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
   .hero .fine{margin-top:14px;font-size:13px;color:#6b5d4e}
   .heroart{position:relative;display:flex;justify-content:center}
@@ -81,6 +81,23 @@
   @media (prefers-reduced-motion:no-preference){
     .orb{animation:breathe 6.5s ease-in-out infinite}
     @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+    /* The film's language, on the page: lines arrive in sequence; the sting
+       glows in; one shaft of dawn light crosses the headline, once. */
+    .hero .l1,.hero .l2,.hero .l3,.hero .l4,.hero .l5{opacity:0;animation:rise .7s cubic-bezier(.2,.6,.2,1) forwards}
+    .hero .l1{animation-delay:.15s}
+    .hero .l2{animation-delay:.7s;animation-name:glowin;animation-duration:1s}
+    .hero .l3{animation-delay:1.25s}
+    .hero .l4{animation-delay:1.6s}
+    .hero .l5{animation-delay:1.95s}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes glowin{0%{opacity:0;transform:translateY(14px);text-shadow:0 0 0 rgba(198,138,43,0)}
+      55%{opacity:1;transform:none;text-shadow:0 0 26px rgba(198,138,43,.55)}
+      100%{opacity:1;transform:none;text-shadow:0 0 0 rgba(198,138,43,0)}}
+    .hero h1{position:relative;overflow:visible}
+    .hero h1::after{content:"";position:absolute;top:-12%;bottom:-12%;left:-8%;width:34%;
+      background:linear-gradient(100deg,transparent,rgba(255,253,246,.5) 50%,transparent);
+      transform:skewX(-14deg);opacity:0;animation:dawnsweep 2s ease-in-out .9s 1;pointer-events:none}
+    @keyframes dawnsweep{0%{opacity:0;left:-12%}18%{opacity:1}82%{opacity:.9}100%{opacity:0;left:82%}}
   }
 
   /* ---------- shared section bits ---------- */
@@ -222,13 +239,14 @@
 <header>
   <div class="wrap hero">
     <div>
-      <h1>You wanted to walk with God.<br><span class="quiet">Somewhere it became homework.</span></h1>
-      <p class="lead">Emmaus is a companion for the road, not another checklist. No streaks to keep alive. No &ldquo;behind&rdquo; to be ashamed of. Just today&rsquo;s stretch of the road — and company on it.</p>
-      <div class="ctas">
-        <a class="btn" href="https://apps.apple.com/app/id6788956467">Download on the App Store</a>
+      <h1><span class="l1">What if Jesus has been walking with you&hellip;</span><br><span class="quiet l2">and you&rsquo;ve been missing Him?</span></h1>
+      <p class="lead l3">That&rsquo;s the road to Emmaus. In Luke 24, two friends walked seven miles with the risen Jesus — and didn&rsquo;t recognize Him until the bread broke. This app was built around one promise: <b>never walk through another day unaware of God&rsquo;s presence.</b></p>
+      <p class="lead l4">Most Christian apps teach you <em>about</em> God. Emmaus helps you recognize Him, walk with Him, and grow closer to Him — through an ordinary Tuesday.</p>
+      <div class="ctas l5">
+        <a class="btn" href="https://apps.apple.com/app/id6788956467">Start walking — it&rsquo;s free</a>
         <a class="btn ghost" href="#film">Watch the film</a>
       </div>
-      <p class="fine">Free to download. Free to walk.</p>
+      <p class="fine l5">Free forever &middot; the spoken voice is free for 7 days</p>
     </div>
     <div class="heroart">
       <div class="phone"><div class="scr"><img src="/images/shot-04-devotional.jpg" width="683" height="1480" alt="Emmaus devotional screen — He's near in the ordinary" fetchpriority="high"></div></div>
@@ -241,7 +259,7 @@
   <div class="wrap">
     <div class="rev">
       <p class="eyebrow">Sound familiar?</p>
-      <h2>The apps made faith feel like a job.</h2>
+      <h2>You wanted to walk with God. Somewhere it became homework.</h2>
     </div>
     <div class="griefs">
       <div class="grief rev"><p>&ldquo;Every reading plan I start dies by day four.&rdquo;</p><span>And the guilt outlives the plan.</span></div>
