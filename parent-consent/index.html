@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Parent permission — Emmaus</title>
+  <style>
+    :root{color-scheme:light;--bg:#fbf6ee;--card:#fffdf9;--ink:#2a2018;--muted:#665b50;--green:#4a6b3c;--line:#e5d8c6;--red:#8f342d;--gold:#9b6b18}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(700px,calc(100% - 28px));margin:0 auto;padding:30px 0 72px}.brand{font:600 19px Georgia,serif;color:var(--green);margin-bottom:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(20px,5vw,34px);box-shadow:0 12px 38px rgba(70,48,25,.06)}h1,h2{font-family:Georgia,serif;line-height:1.18}h1{font-size:clamp(28px,7vw,40px);margin:0 0 10px}h2{font-size:23px;margin:32px 0 9px}.lead{font:italic 17px/1.5 Georgia,serif;color:var(--gold)}p,li{color:var(--muted)}label{display:block;font-weight:650;margin:16px 0 6px;color:var(--ink)}input,select,textarea{width:100%;font:inherit;padding:13px 14px;border:1px solid #cfc0ad;border-radius:10px;background:#fff;color:var(--ink)}button,.button{border:0;border-radius:11px;background:var(--green);color:#fff;font:650 16px/1 inherit;padding:14px 18px;cursor:pointer;text-decoration:none;display:inline-block}button.secondary{background:#eee6db;color:var(--ink)}button.danger{background:var(--red)}button:disabled{opacity:.55;cursor:wait}.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:180px}.check{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;margin:16px 0}.check input{width:20px;height:20px;margin-top:3px}.check label{margin:0;font-weight:500}.option{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.option strong{color:var(--ink)}.notice{border-left:3px solid var(--green);padding:4px 0 4px 16px}.status{padding:12px 14px;border-radius:10px;background:#f1eadf;color:var(--ink);margin:16px 0}.error{background:#fae9e6;color:var(--red)}.success{background:#e7f0e2;color:#34532b}.fine{font-size:13px}.hidden{display:none!important}canvas{display:block;width:100%;height:170px;background:#fff;border:1px solid #cfc0ad;border-radius:10px;touch-action:none}.signature-actions{text-align:right;margin-top:7px}a{color:#3f6333}.divider{border:0;border-top:1px solid var(--line);margin:30px 0}.delete-confirm{max-width:340px}footer{font-size:13px;color:var(--muted);margin:18px 4px}.spinner{display:inline-block;width:16px;height:16px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:7px}@keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">Emmaus</div>
+    <section class="card">
+      <div id="loading"><span class="spinner"></span>Opening the parent permission page…</div>
+
+      <div id="pair" class="hidden">
+        <h1>Parent or guardian permission</h1>
+        <p class="lead">A child asked to use Emmaus. We will not open the account until you review what it does.</p>
+        <p>Enter the eight-digit code shown on the child’s device. We’ll email you a private link with the full notice and consent form.</p>
+        <form id="pair-form">
+          <label for="code">Pairing code</label>
+          <input id="code" inputmode="numeric" autocomplete="one-time-code" maxlength="11" placeholder="1234 5678" required>
+          <label for="email">Your email</label>
+          <input id="email" type="email" autocomplete="email" required>
+          <p class="fine">We send the private parent notice here. In the signed form, you will choose the parent-controlled email used for the child’s login; it may be this address or a unique alias you control.</p>
+          <button type="submit">Email the parent notice</button>
+        </form>
+        <div id="pair-message" aria-live="polite"></div>
+      </div>
+
+      <div id="review" class="hidden">
+        <h1>Review before you decide</h1>
+        <p class="lead">Nothing is opened for the child unless you give permission and Emmaus verifies the signed form.</p>
+        <div class="notice">
+          <p><strong>Who operates Emmaus:</strong> Emmaus App, LLC, 126 Hammocks Court, Green Acres, Florida 33413. Contact <a href="mailto:support@getemmaus.app">support@getemmaus.app</a>.</p>
+          <p><strong>Before approval:</strong> Emmaus keeps only the random permission request, the parent email entered here, and short-lived protected network-security data used to stop pairing-code abuse. It does not ask the child for an account email, name, prayer, journal, voice, coach message, or other account content.</p>
+          <p><strong>Core information:</strong> If approved, Emmaus stores the child’s first name, parent-managed account email, Bible reading activity, goals, app settings, prayers, and journals. Supabase hosts the account and stored content. We use that information to provide, secure, and support the account. Product metrics are aggregated or de-identified where feasible. We do not sell child information or use it for advertising.</p>
+          <p><strong>Optional AI:</strong> Only if you choose it, prompts and relevant Emmaus context may be sent to Anthropic and OpenAI for coaching, devotional generation, safety screening, and memory. User API content is not used to train their general models under their business/API terms. Emmaus stores coach conversations until the account holder deletes them or deletes the account.</p>
+          <p><strong>Optional voice:</strong> Only if you choose both AI and voice, recordings are sent to OpenAI for transcription and text may be sent for generated speech. Emmaus does not need voice to use the typed experience.</p>
+          <p><strong>Optional connections:</strong> Only if you choose it, the child can connect with an invited walking partner. Partners never see journals or coach chats. They can see only the limited walk information and prayers the child explicitly marks for partners, and can exchange encouragement notes.</p>
+          <p><strong>Other providers:</strong> Resend delivers necessary parent/account email. RevenueCat and Apple process subscriptions and purchases. Apple may provide a coarse age range. Calendar event details remain on the device and are not inserted into AI prompts.</p>
+          <p><strong>Your control:</strong> You can say no to AI, voice, and connections while allowing the core Bible activities. From this private link you can withdraw permission, ask to review/correct the child’s information, or permanently delete the account. We retain child information only while needed to provide the account and meet security/legal obligations, then securely delete it under our retention schedule.</p>
+        </div>
+        <p>Read the full <a href="/privacy/" target="_blank" rel="noopener">Privacy Policy</a> and <a href="/terms/" target="_blank" rel="noopener">Terms</a>.</p>
+
+        <form id="consent-form">
+          <h2>The child and parent</h2>
+          <div class="row">
+            <div><label for="child-name">Child’s first name</label><input id="child-name" maxlength="80" required></div>
+            <div><label for="parent-name">Your full legal name</label><input id="parent-name" autocomplete="name" maxlength="120" required></div>
+          </div>
+          <label for="account-email">Parent-managed account email</label>
+          <input id="account-email" type="email" autocomplete="email" required>
+          <p class="fine">You must control this inbox. It can be your email or a unique alias such as name+child@example.com. If your own email already has an Emmaus account, use a different parent-controlled alias. The child’s login must use this exact address.</p>
+          <label for="relationship">Your relationship to the child</label>
+          <select id="relationship" required><option value="">Choose one</option><option>Parent</option><option>Legal guardian</option></select>
+
+          <h2>Required core permission</h2>
+          <div class="check"><input id="core" type="checkbox" required><label for="core">I give Emmaus permission to collect and use the core account information described above so the child can use the Bible, prayer, journal, goal, and planning features.</label></div>
+
+          <h2>Optional features</h2>
+          <div class="option"><div class="check"><input id="allow-ai" type="checkbox"><label for="allow-ai"><strong>Allow AI coaching</strong><br>Send prompts and relevant account context to the named AI providers.</label></div></div>
+          <div class="option"><div class="check"><input id="allow-voice" type="checkbox" disabled><label for="allow-voice"><strong>Allow AI voice</strong><br>Send recordings for transcription and return generated speech. Requires AI coaching.</label></div></div>
+          <div class="option"><div class="check"><input id="allow-connections" type="checkbox"><label for="allow-connections"><strong>Allow walking-partner connections</strong><br>Let the child invite or accept another user and share only the limited items described above.</label></div></div>
+
+          <h2>Parent certification and signature</h2>
+          <div class="check"><input id="adult" type="checkbox" required><label for="adult">I certify that I am at least 18 years old.</label></div>
+          <div class="check"><input id="guardian" type="checkbox" required><label for="guardian">I certify that I am the child’s parent or legal guardian and have authority to give this permission.</label></div>
+          <p>Sign inside the box with your finger, mouse, or Apple Pencil. This signature and the form above are sent electronically to Emmaus for verification.</p>
+          <canvas id="signature" width="1200" height="340" aria-label="Signature drawing area"></canvas>
+          <div class="signature-actions"><button id="clear-signature" type="button" class="secondary">Clear signature</button></div>
+          <label for="signature-name">Type your full legal name again</label>
+          <input id="signature-name" autocomplete="name" maxlength="120" required>
+          <p class="fine">By signing and submitting, you confirm this is your electronic signature on the consent form dated today. Emmaus will manually review it before opening the account.</p>
+          <button id="submit-consent" type="submit">Submit signed permission</button>
+        </form>
+        <div id="review-message" aria-live="polite"></div>
+      </div>
+
+      <div id="state" class="hidden">
+        <h1 id="state-title">Permission status</h1>
+        <div id="state-copy" class="status"></div>
+        <div id="approved-actions" class="hidden">
+          <p>This private link is your parent control. Keep it. You can ask to review or correct the child’s information, stop future collection, or delete the account.</p>
+          <div class="row"><button type="button" class="secondary" data-privacy="access">Request a copy</button><button type="button" class="secondary" data-privacy="correction">Request a correction</button></div>
+          <hr class="divider">
+          <h2>Withdraw permission</h2>
+          <p>This immediately blocks the account and disconnects walking partners. It does not by itself erase the account.</p>
+          <button id="withdraw" type="button" class="danger">Withdraw parent permission</button>
+          <h2>Permanently delete the account</h2>
+          <p>This permanently deletes the sign-in and stored child account data. It cannot be undone.</p>
+          <input id="delete-confirm" class="delete-confirm" placeholder="DELETE CHILD ACCOUNT">
+          <button id="delete" type="button" class="danger">Delete child account</button>
+        </div>
+        <div id="state-message" aria-live="polite"></div>
+      </div>
+    </section>
+    <footer>Emmaus App, LLC · <a href="mailto:support@getemmaus.app">support@getemmaus.app</a> · No tracking pixels or advertising cookies</footer>
+  </main>
+  <script>
+    const ENDPOINT='https://xfyknijqizysfrplsyvt.supabase.co/functions/v1/parental-consent';
+    const token=new URLSearchParams(location.search).get('token')||'';
+    const $=id=>document.getElementById(id);
+    const show=id=>{['loading','pair','review','state'].forEach(x=>$(x).classList.toggle('hidden',x!==id));};
+    const message=(id,text,kind='status')=>{$(id).innerHTML=text?`<div class="status ${kind}">${escapeHtml(text)}</div>`:''};
+    const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    async function call(action,data={}){const response=await fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action,...data})});const body=await response.json().catch(()=>({}));if(!response.ok)throw new Error(body.error||'The request could not be completed.');return body}
+    if(!token){show('pair')}else{loadParent()}
+    $('pair-form').addEventListener('submit',async e=>{e.preventDefault();const button=e.submitter;button.disabled=true;message('pair-message','');try{await call('request_notice',{pairingCode:$('code').value,parentEmail:$('email').value});message('pair-message','If the code is valid, the private parent notice is on its way. Check spam or junk too.','success');e.target.reset()}catch(err){message('pair-message',err.message,'error')}finally{button.disabled=false}});
+    async function loadParent(){show('loading');try{const data=await call('get_parent_request',{manageToken:token});renderParent(data)}catch(err){show('state');$('state-title').textContent='This link is not available';$('state-copy').textContent=err.message}}
+    function renderParent(data){if(['notice_sent','denied'].includes(data.status)){show('review');$('parent-name').value=data.parentName||'';$('child-name').value=data.childFirstName||'';$('account-email').value=data.accountEmail||data.parentEmail||'';$('relationship').value=data.relationship||'';$('allow-ai').checked=!!data.permissions.ai;$('allow-voice').disabled=!data.permissions.ai;$('allow-voice').checked=!!data.permissions.voice;$('allow-connections').checked=!!data.permissions.connections;if(data.reviewNote)message('review-message',`Please correct and resubmit: ${data.reviewNote}`,'error');initSignature();return}show('state');const map={pending_review:['Signed form received','Emmaus is reviewing the signed form. The child’s device will update after approval.'],approved:['Permission approved',`The signed form is approved. Create the child login with the approved parent-managed address: ${data.accountEmail||'the address on the form'}.`],claimed:['Child account active','The parent-managed child account is active with the options you approved.'],revoked:['Permission withdrawn','Future collection is blocked. You may still request deletion below.'],expired:['Request expired','Start a new request from the child’s device.']};const copy=map[data.status]||['Permission status',`Current status: ${data.status}`];$('state-title').textContent=copy[0];$('state-copy').textContent=copy[1];$('approved-actions').classList.toggle('hidden',!['approved','claimed','revoked'].includes(data.status))}
+    $('allow-ai').addEventListener('change',()=>{const on=$('allow-ai').checked;$('allow-voice').disabled=!on;if(!on)$('allow-voice').checked=false});
+    let signatureReady=false,hasInk=false,ctx,drawing=false,last=null;
+    function initSignature(){if(signatureReady)return;signatureReady=true;const canvas=$('signature');ctx=canvas.getContext('2d');ctx.lineWidth=7;ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle='#2a2018';const point=e=>{const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}};canvas.addEventListener('pointerdown',e=>{drawing=true;last=point(e);canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!drawing)return;const p=point(e);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;hasInk=true});const stop=()=>{drawing=false;last=null};canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',stop)}
+    $('clear-signature').addEventListener('click',()=>{ctx.clearRect(0,0,$('signature').width,$('signature').height);hasInk=false});
+    $('consent-form').addEventListener('submit',async e=>{e.preventDefault();if(!hasInk){message('review-message','Please sign inside the signature box.','error');return}const button=e.submitter;button.disabled=true;message('review-message','');try{const result=await call('submit_consent',{manageToken:token,parentName:$('parent-name').value,childFirstName:$('child-name').value,accountEmail:$('account-email').value,relationship:$('relationship').value,coreConsent:$('core').checked,allowAi:$('allow-ai').checked,allowVoice:$('allow-voice').checked,allowConnections:$('allow-connections').checked,certifyAdult:$('adult').checked,certifyGuardian:$('guardian').checked,signatureName:$('signature-name').value,evidenceMime:'image/png',evidenceBase64:$('signature').toDataURL('image/png')});if(result.submitted)loadParent()}catch(err){message('review-message',err.message,'error')}finally{button.disabled=false}});
+    $('withdraw').addEventListener('click',async()=>{if(!confirm('Withdraw permission and block the child account now?'))return;try{await call('withdraw',{manageToken:token});await loadParent()}catch(err){message('state-message',err.message,'error')}});
+    document.querySelectorAll('[data-privacy]').forEach(button=>button.addEventListener('click',async()=>{button.disabled=true;try{await call('privacy_request',{manageToken:token,requestType:button.dataset.privacy});message('state-message','Request received. We’ll use the parent email on file to verify and respond.','success')}catch(err){message('state-message',err.message,'error')}finally{button.disabled=false}}));
+    $('delete').addEventListener('click',async()=>{if($('delete-confirm').value!=='DELETE CHILD ACCOUNT'){message('state-message','Type DELETE CHILD ACCOUNT exactly to confirm.','error');return}if(!confirm('Permanently delete the child account and its stored data? This cannot be undone.'))return;$('delete').disabled=true;try{await call('privacy_request',{manageToken:token,requestType:'deletion',confirmation:$('delete-confirm').value});$('state-title').textContent='Account deleted';$('state-copy').textContent='The child sign-in and stored account data have been permanently deleted.';$('approved-actions').classList.add('hidden')}catch(err){message('state-message',err.message,'error')}finally{$('delete').disabled=false}});
+  </script>
+</body>
+</html>
