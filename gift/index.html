@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'; connect-src 'none'">
+  <meta name="theme-color" content="#FBF6EE">
+  <meta property="og:title" content="A year of Emmaus, given to you">
+  <meta property="og:description" content="A gift to support your walk with Jesus through Scripture, prayer, and reflection.">
+  <title>A year, given to you — Emmaus</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#fbf6ee;--ink:#2a2018;--muted:#5c4f42;--green:#4a6b3c;--on-green:#fff;--surface:#fffaf4;--line:#dfd5c6}
+    @media(prefers-color-scheme:dark){:root{--bg:#171310;--ink:#f3eadb;--muted:#cbbba6;--green:#8fb07a;--on-green:#171310;--surface:#241e17;--line:#463a2d}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}
+    main{max-width:32rem;margin:auto;padding:clamp(36px,10vh,100px) 24px 40px}.wordmark{font-family:Georgia,serif;color:var(--green);font-size:24px;margin-bottom:48px;font-weight:bold}
+    .eyebrow{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green)}h1{font-family:Georgia,serif;font-size:clamp(34px,9vw,46px);line-height:1.1;font-weight:500;margin:12px 0 20px}
+    .lead{font-size:18px;color:var(--muted)}.card{border:1px solid var(--line);border-radius:22px;background:var(--surface);padding:22px;margin:28px 0}
+    .card p{margin:0}.card p+p{margin-top:14px}.fine{font-size:14px;color:var(--muted)}a{color:var(--green)}.button{display:block;text-align:center;text-decoration:none;font-size:17px;font-weight:600;padding:16px 18px;border-radius:16px;background:var(--green);color:var(--on-green);margin-top:12px;min-height:54px}
+    .secondary{background:transparent;color:var(--green);border:1px solid var(--line)}[hidden]{display:none!important}a:focus-visible{outline:3px solid var(--green);outline-offset:4px}.footer{margin-top:36px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<main>
+  <div class="wordmark">Emmaus</div>
+  <p class="eyebrow">Gift a Year</p>
+  <h1>A year, given to you.</h1>
+  <p class="lead" id="intro">A gift to support your walk with Jesus through Scripture, prayer, and reflection.</p>
+  <div class="card">
+    <p id="instructions">Open this invitation in Emmaus and sign in to accept your gift. Your year begins when you accept it — not when someone buys it.</p>
+    <p class="fine">No automatic renewal or charge at the end of your gifted year. Your private reflections stay yours; a gift does not share your activity with the giver.</p>
+  </div>
+  <a class="button" id="open-app" hidden>Open my gift in Emmaus</a>
+  <a class="button secondary" href="https://apps.apple.com/app/id6788956467" rel="noreferrer">Download or update Emmaus</a>
+  <p class="fine" id="install-note">After installing or updating, return to the original message and open this gift link again. Keep the link private — it can be accepted once.</p>
+  <p class="fine">Already subscribed through Apple? Keep this gift until your current access ends. A gift does not cancel an existing subscription.</p>
+  <section class="card" id="gift-terms" aria-labelledby="gift-terms-title">
+    <h2 id="gift-terms-title" style="font-size:18px;margin:0 0 14px">Gift terms and refunds</h2>
+    <p class="fine">A gift is a one-time Apple purchase for one other person's Emmaus account. The price shown by Apple before purchase applies. It provides one calendar year from the recipient's explicit claim, with no automatic renewal. Unclaimed gifts do not expire; a claimed gift cannot be reassigned or added to existing paid or gifted access.</p>
+    <p class="fine">Apple handles payment and decides refund eligibility. The purchaser can <a href="https://support.apple.com/en-us/118223" rel="noreferrer">request a refund through Apple</a>. If Apple refunds a gift, it can no longer be claimed and access already granted by that gift ends. Independent Apple subscriptions or other account access are not cancelled by a gift refund.</p>
+  </section>
+  <p class="footer">Emmaus is a tool to support your walk with Jesus.<br><a href="mailto:support@getemmaus.app">Need help?</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms of use</a></p>
+</main>
+<script>
+  (() => {
+    // The bearer token stays in the fragment, out of server requests/referrers.
+    // No analytics, public preview, automatic redemption, or network calls here.
+    const params = new URLSearchParams(location.hash.slice(1));
+    const token = params.get('token');
+    if (params.getAll('token').length === 1 && token && /^[a-f0-9]{64}$/.test(token)) {
+      const open = document.getElementById('open-app');
+      open.href = 'app.getemmaus://gift/?token=' + encodeURIComponent(token.toLowerCase());
+      open.hidden = false;
+    } else {
+      document.getElementById('instructions').textContent = 'This page is missing a complete gift link. Return to the original message and open the full link, or ask the giver to share a fresh invitation.';
+      document.getElementById('install-note').hidden = true;
+    }
+  })();
+</script>
+</body>
+</html>

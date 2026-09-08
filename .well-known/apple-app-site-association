@@ -4,12 +4,21 @@
     "details": [
       {
         "appID": "W2W6DFZ776.app.getemmaus",
-        "appIDs": ["W2W6DFZ776.app.getemmaus"],
-        "paths": ["/i/*"],
+        "appIDs": [
+          "W2W6DFZ776.app.getemmaus"
+        ],
+        "paths": [
+          "/i/*",
+          "/gift/*"
+        ],
         "components": [
           {
             "/": "/i/*",
             "comment": "Walking-partner invite links open directly in the Emmaus app."
+          },
+          {
+            "/": "/gift/*",
+            "comment": "Private Gift a Year links open in Emmaus. Acceptance requires sign-in."
           }
         ]
       }
