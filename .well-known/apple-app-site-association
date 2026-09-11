@@ -21,6 +21,26 @@
             "comment": "Private Gift a Year links open in Emmaus. Acceptance requires sign-in."
           }
         ]
+      },
+      {
+        "appID": "CT52CZ7684.app.getemmaus",
+        "appIDs": [
+          "CT52CZ7684.app.getemmaus"
+        ],
+        "paths": [
+          "/i/*",
+          "/gift/*"
+        ],
+        "components": [
+          {
+            "/": "/i/*",
+            "comment": "Walking-partner invite links open directly in the Emmaus app."
+          },
+          {
+            "/": "/gift/*",
+            "comment": "Private Gift a Year links open in Emmaus. Acceptance requires sign-in."
+          }
+        ]
       }
     ]
   }
