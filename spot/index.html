@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Emmaus — Walk with God</title>
-  <meta name="description" content="We don't have Bible plans. The plan is the Bible. Watch the Emmaus film.">
+  <meta name="description" content="Come as you are. The road starts today. Watch the Emmaus launch film.">
   <meta property="og:title" content="Emmaus — Walk with God">
-  <meta property="og:description" content="We don't have Bible plans. The plan is the Bible.">
-  <meta property="og:type" content="video.other">
+  <meta property="og:description" content="Come as you are. The road starts today.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://getemmaus.app/spot/">
-  <meta property="og:image" content="https://getemmaus.app/media/emmaus-spot-poster.jpg">
-  <meta property="og:video" content="https://getemmaus.app/media/emmaus-spot.mp4">
-  <meta property="og:video:type" content="video/mp4">
-  <meta property="og:video:width" content="1920">
-  <meta property="og:video:height" content="1080">
-  <meta name="twitter:card" content="player">
+  <meta property="og:image" content="https://getemmaus.app/images/app-dashboard.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Emmaus — Walk with God">
-  <meta name="twitter:description" content="We don't have Bible plans. The plan is the Bible.">
-  <meta name="twitter:image" content="https://getemmaus.app/media/emmaus-spot-poster.jpg">
+  <meta name="twitter:description" content="Come as you are. The road starts today.">
+  <meta name="twitter:image" content="https://getemmaus.app/images/app-dashboard.png">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{min-height:100svh;background:#000;color:#f4ecdd;display:flex;flex-direction:column;
       align-items:center;justify-content:center;gap:28px;padding:24px;
       font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
-    video{width:min(1100px,100%);border-radius:14px;box-shadow:0 30px 90px rgba(0,0,0,.8),0 0 60px rgba(198,138,43,.12)}
+    .launch-film{width:min(360px,100%);aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 90px rgba(0,0,0,.8),0 0 60px rgba(198,138,43,.12)}
+    .launch-film iframe{display:block;width:100%;height:100%;border:0}
+    .film-source{font-size:14px;letter-spacing:normal;text-transform:none}
+    .film-source a{text-underline-offset:4px}
+    a:focus-visible{outline:2px solid #d9b979;outline-offset:6px}
     h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(26px,4vw,40px)}
     p{color:#b6a88e;font-size:15px;letter-spacing:.18em;text-transform:uppercase;padding-left:.18em;text-align:center}
     a.store{display:inline-block;margin-top:2px;background:#f4ecdd;color:#1e1a14;text-decoration:none;
@@ -33,9 +33,11 @@
 </head>
 <body>
   <h1>Emmaus</h1>
-  <video src="/media/emmaus-spot.mp4" poster="/media/emmaus-spot-poster.jpg" controls playsinline preload="metadata"></video>
-  <p>Walk with God · Free on the App Store</p>
+  <div class="launch-film">
+      <iframe src="https://www.facebook.com/plugins/video.php?height=640&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1198784206149826%2F&amp;show_text=false&amp;width=360&amp;t=0" width="360" height="640" title="Emmaus launch film — Come as you are" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    </div>
+    <p class="film-source"><a href="https://www.facebook.com/reel/1198784206149826/" target="_blank" rel="noopener noreferrer">Watch the launch film on Facebook &nearr;</a></p>
+  <p>Come as you are. The road starts today.</p>
   <a class="store" href="https://apps.apple.com/app/id6788956467">Get Emmaus</a>
-  <p style="letter-spacing:.02em;text-transform:none;font-size:13px"><a href="/media/emmaus-spot-vertical.mp4" style="color:#b6a88e">Vertical version for phones &darr;</a></p>
 </body>
 </html>
