@@ -1,6 +1,6 @@
 # Emmaus: Walk with God
 
-> Emmaus is an iPhone Bible and discipleship app from Disciple Maker, LLC. Read the whole Bible one chapter a day with no streaks, keep a private prayer journal, and walk with a friend.
+> Emmaus is an iPhone discipleship companion from Disciple Maker, LLC for walking with God every day. It is not a Bible-reading app: it explains any verse with Scripture-grounded answers, writes a personal morning devotional, builds daily rhythms of prayer, goals, and evening examen, and lets you walk with friends you disciple. It also guides you through the whole Bible one chapter a day with no streaks.
 
 ## App
 
