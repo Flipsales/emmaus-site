@@ -1,6 +1,7 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
-const { chromium } = await import('file:///Users/flipo/Good%20Soil%20Discipleship%20Companion%20App/node_modules/playwright/index.mjs')
+// Set PLAYWRIGHT_MODULE to a playwright index.mjs file:// URL if it isn't resolvable from here
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE ?? 'playwright')
 const here = path.dirname(fileURLToPath(import.meta.url))
 const browser = await chromium.launch()
 for (const [name, vp] of [['desk', {width:1440,height:900}], ['mob', {width:390,height:844}]]) {
