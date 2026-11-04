@@ -14,6 +14,8 @@ Tap the orb and speak; Emmaus listens, answers in a calm spoken voice, and point
 - [Privacy Policy](https://getemmaus.app/privacy/)
 - [Support](https://getemmaus.app/support/)
 - [Terms of Use](https://getemmaus.app/terms/)
+- [About Emmaus](https://getemmaus.app/about/)
+- [Start here](https://getemmaus.app/start-here/)
 
 ## Pricing
 
