@@ -88,8 +88,10 @@
 <article class="doc">
 <h1>Emmaus — Privacy Policy</h1>
 
-<p class="meta"><strong>Last updated: September 24, 2026</strong><br>
-<strong>Effective date: when the version containing push notifications and check-in emails is released</strong></p>
+<p class="meta"><strong>Last updated: November 8, 2026</strong><br>
+<strong>Effective date: when the Android version of the App is first released on Google Play</strong></p>
+
+<div class="callout"><p><strong>What changed in this update (November 8, 2026):</strong> Emmaus is coming to <strong>Android</strong> through <strong>Google Play</strong>. This update adds what that means: <strong>Sign in with Google</strong>, subscriptions billed by <strong>Google Play</strong>, the Android permission settings, and that <strong>the Android app is for ages 13 and up</strong>. Nothing changes for the iPhone and iPad app. Changed passages are marked <em>[Updated — Android]</em> in Sections 1.1, 1.6, 4, 8, and 9.</p></div>
 
 <div class="callout"><p><strong>What changed in this update (September 24, 2026):</strong> Emmaus can now send <strong>push notifications</strong> from our servers (when a walking partner sends encouragement, when a partner who opted in prays for you, and when new reading plans open), and — <strong>only if you agree</strong> — a few short <strong>check-in emails</strong> if you stop opening the App. We also now record when you last opened the App. Changed passages are marked <em>[Updated]</em> in the short version and in Sections 1.9, 1.10, 1.14, 2, 3, 4, 8, and 9. Our earlier statement that we send no marketing email has been replaced by the check-in email terms below; accounts that agreed to the earlier wording are not sent check-in emails unless they opt in.</p></div>
 
@@ -123,6 +125,7 @@
 
 <ul>
   <li><strong>Email address</strong> and authentication credentials when you sign up with email/password, an email sign-in link, or <strong>Sign in with Apple</strong>. If you use Sign in with Apple and choose Apple's private email-relay option, we receive a relay address rather than your personal email.</li>
+  <li><em>[Updated — Android]</em> On Android, you can also use <strong>Sign in with Google</strong>. Google then gives us your <strong>email address</strong>, your <strong>name</strong>, and a <strong>Google account identifier</strong> so we can recognize you next time. We do not receive your Google password, contacts, or any other Google data.</li>
   <li>A <strong>user account identifier</strong> (a random ID assigned by our system) used to associate your data with your account.</li>
 </ul>
 
@@ -145,7 +148,7 @@
 
 <p><strong>1.5 Sensitive information.</strong> Because of what the App is for, the content you share may include <strong>religious and spiritual beliefs</strong> and information about your <strong>mental or emotional state</strong>. Apple and various laws treat these as sensitive categories. We collect this only to provide the App's core features to you and <strong>never</strong> for advertising, profiling for third parties, or tracking.</p>
 
-<p><strong>1.6 Subscription and purchase information.</strong> When you subscribe, we receive <strong>subscription status and purchase history</strong> (for example, whether your subscription is active, the product, trial status, and renewal/expiration) from <strong>Apple</strong> through our subscription-management provider <strong>RevenueCat</strong>, associated with an app-user identifier. <strong>Apple processes your payment; we do not receive or store your full payment-card details.</strong></p>
+<p><strong>1.6 Subscription and purchase information.</strong> When you subscribe, we receive <strong>subscription status and purchase history</strong> (for example, whether your subscription is active, the product, trial status, and renewal/expiration) from <strong>Apple</strong> (on iPhone and iPad) or <em>[Updated — Android]</em> <strong>Google Play</strong> (on Android) through our subscription-management provider <strong>RevenueCat</strong>, associated with an app-user identifier. <strong>Apple or Google processes your payment; we do not receive or store your full payment-card details.</strong></p>
 
 <p><strong>1.7 Content reports.</strong> If you use the "Report a concern" control on an AI message, or report a walking partner or something they sent you, we collect the reported content and your report so we can review it (see Sections 5.1 and 6). A restricted operational alert tells the owner that a report is waiting using only its random report identifier, type, and time; the alert never contains the reported words, your account identifier, or your contact information.</p>
 
@@ -238,11 +241,12 @@
 
 <tr><td><strong>Supabase</strong></td><td>Hosts our database, authentication, storage, and secure server functions</td><td>Your account and all User Content, stored on our behalf</td></tr>
 
-<tr><td><strong>RevenueCat</strong></td><td>Manages your subscription entitlement</td><td>An app-user identifier and subscription status received from Apple</td></tr>
+<tr><td><strong>RevenueCat</strong></td><td>Manages your subscription entitlement</td><td>An app-user identifier and subscription status received from Apple or <em>[Updated — Android]</em> Google Play</td></tr>
 
 <tr><td><strong>Resend</strong></td><td>Delivers user email (for example, the welcome guide, Apple-trial reminder, and — if you agreed — check-in emails) and restricted internal operational alerts</td><td>The recipient address and message contents. A report-queue alert contains only random report identifiers, report types, and times — never reported content, user identifiers, or user contact information. Turning ordinary email off does not suppress a necessary subscription notice or internal security notification.</td></tr>
 
 <tr><td><strong>Apple</strong></td><td>App distribution, In-App Purchase billing, Sign in with Apple, privacy-preserving Declared Age Range where available, and <em>[Updated]</em> the Apple Push Notification service</td><td>Payment and purchase data (processed by Apple); your email or private relay if you use Sign in with Apple; a coarse age range and declaration category if you choose to share it; for a push notification, your device push token and the short notification text</td></tr>
+<tr><td><em>[Updated — Android]</em> <strong>Google</strong></td><td>App distribution on Google Play, Google Play billing, and Sign in with Google on Android</td><td>Payment and purchase data (processed by Google); if you use Sign in with Google, Google tells us your email address, name, and Google account identifier</td></tr>
 
 </tbody></table></div>
 
@@ -339,9 +343,9 @@
   <li><strong>Control what a partner or discipler can see</strong> — accept a connection only after the accept screen tells you what it shares and in which direction, and end any connection at any time with <strong>Disconnect</strong> on that person's screen. Ending it stops the sharing immediately.</li>
   <li><strong>Manage the AI's memories</strong> — view what the AI remembers (grouped by category), <strong>edit or delete individual memories</strong>, archive them, or use <strong>"Forget everything"</strong> to erase all AI memory. You can also <strong>pause memory</strong> so the AI keeps working but stops learning new facts.</li>
   <li><strong>Disable or decline AI features</strong> — you can decline AI processing and use the App's non-AI features, and you can turn conversational voice off and type instead.</li>
-  <li><strong>Control notifications</strong> — <em>[Updated]</em> enable or disable each type of reminder and push notification (partner encouragement, new reading plans) and set times; nothing is gated on notifications, and you can turn them all off in the App or in iOS <strong>Settings → Notifications → Emmaus</strong>.</li>
+  <li><strong>Control notifications</strong> — <em>[Updated]</em> enable or disable each type of reminder and push notification (partner encouragement, new reading plans) and set times; nothing is gated on notifications, and you can turn them all off in the App or in iOS <strong>Settings → Notifications → Emmaus</strong> (<em>[Updated — Android]</em> on Android, in your phone's <strong>Settings → Apps → Emmaus → Notifications</strong>).</li>
   <li><em>[Updated]</em> <strong>Choose whether partners know you prayed</strong> — "Let people know when I've prayed for them" is <strong>off</strong> unless you turn it on, on a partner's screen in the App.</li>
-  <li><strong>Control the microphone</strong> — grant or deny microphone access in iOS Settings; declining does not lock you out, because typed input is always available.</li>
+  <li><strong>Control the microphone</strong> — grant or deny microphone access in iOS Settings (<em>[Updated — Android]</em> or, on Android, in <strong>Settings → Apps → Emmaus → Permissions</strong>); declining does not lock you out, because typed input is always available.</li>
   <li><strong>Control the calendar</strong> — turn calendar features off in <strong>Settings → Calendar</strong>, or revoke access entirely in iOS <strong>Settings → Privacy &amp; Security → Calendars</strong>. Because your events are only ever read on your device (Section 1.11), turning it off leaves nothing behind on our side to delete.</li>
 </ul>
 
@@ -349,7 +353,9 @@
 
 <h2>9. Children's Privacy</h2>
 
-<p>Emmaus may be used by a child under 13 only through its parent-managed process. Before account creation, we ask only for a coarse age range. If the range is under 13, the App creates a random request and displays a pairing code; it does not ask for the child's name, email, journal, prayer, voice, coach message, or other account content. The parent or legal guardian must use the code, receive our direct notice by email, choose each optional feature, choose a parent-controlled account email, and sign the consent form. Submitting the signed form automatically records approval and updates the child's device. The child login must use that approved parent-managed account email; it may be a unique alias if the parent's own address already has an Emmaus account.</p>
+<p><em>[Updated — Android]</em> <strong>The Android app is for ages 13 and up.</strong> It does not offer the parent-managed process below and does not open an account for a child under 13; a parent-approved child account continues to work on iPhone and iPad.</p>
+
+<p>On iPhone and iPad, Emmaus may be used by a child under 13 only through its parent-managed process. Before account creation, we ask only for a coarse age range. If the range is under 13, the App creates a random request and displays a pairing code; it does not ask for the child's name, email, journal, prayer, voice, coach message, or other account content. The parent or legal guardian must use the code, receive our direct notice by email, choose each optional feature, choose a parent-controlled account email, and sign the consent form. Submitting the signed form automatically records approval and updates the child's device. The child login must use that approved parent-managed account email; it may be a unique alias if the parent's own address already has an Emmaus account.</p>
 
 <p>The core consent covers account storage and the Bible, prayer, journal, goal, and planning features. <strong>AI coaching, AI voice, and walking-partner connections are separate parent choices.</strong> Database and server controls enforce those choices even if a screen is bypassed. A parent may use their private management link to request access or correction, withdraw permission, or permanently delete the child account. Withdrawal immediately blocks the account and removes active connections; deletion removes the child sign-in and stored account content, subject to the backup and narrow legal-record practices in Section 3. The child can also delete the account from the blocked-account screen.</p>
 
