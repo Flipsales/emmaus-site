@@ -257,3 +257,9 @@ p,li,dd{text-wrap:pretty}
   text-decoration-color:color-mix(in srgb,var(--olive) 40%,transparent)}
 .doc-foot a.backlink:hover{text-decoration-color:var(--olive)}
 .doc-foot .disclaimer{margin-bottom:10px}
+
+  .store-links{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .store-links .btn{margin-left:0;white-space:nowrap}
+  @media(max-width:1040px){.navin{gap:12px}}
+  @media(max-width:360px){.navin .brand{font-size:20px}.navin .gmenu>summary{font-size:13px;padding:8px 4px}}
+  @media(max-width:640px){.navin{gap:10px}.store-links{flex-direction:column;gap:2px}.store-links .btn.small{min-height:26px;padding:4px 12px;font-size:12px}}
