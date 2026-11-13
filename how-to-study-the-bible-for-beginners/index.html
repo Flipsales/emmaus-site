@@ -6,8 +6,7 @@
 <title>How to Study the Bible for Beginners (SOAP) | Emmaus</title>
 <meta name="description" content="A simple way to study the Bible as a beginner: pick one book, read a short passage, and use SOAP (Scripture, Observation, Application, Prayer).">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF6EE">
 <link rel="canonical" href="https://getemmaus.app/how-to-study-the-bible-for-beginners/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <meta property="og:type" content="article">
@@ -93,103 +92,104 @@
   }
 ]
 </script>
-<style>
-  :root{
-    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB; --border-strong:#D9CBB4;
-    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#7A6C5C;
-    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B; --accent-text:#8A5E12;
-    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --focus:rgba(94,127,70,.5); --bar:rgba(251,246,238,.85);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#171310; --surface:#211B15; --border:#362D23; --border-strong:#4A3E31;
-      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
-      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C; --accent-text:#E0B15C;
-      --focus:rgba(159,187,134,.6); --bar:rgba(23,19,16,.85);
-    }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
-  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
-    line-height:1.72; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
-  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:6px}
-  a{color:var(--primary); text-decoration:underline; text-underline-offset:2px}
-  a:hover{color:var(--primary-hover)}
-  .topbar{position:sticky; top:0; z-index:5; background:var(--bar);
-    -webkit-backdrop-filter:saturate(1.3) blur(8px); backdrop-filter:saturate(1.3) blur(8px);
-    border-bottom:1px solid var(--border)}
-  .topbar-inner{max-width:46rem; margin:0 auto; padding:13px 24px; display:flex; align-items:center; gap:14px}
-  .home{display:inline-flex; align-items:center; gap:6px; font-size:.9rem; font-weight:600;
-    color:var(--text-secondary); text-decoration:none; white-space:nowrap}
-  .home:hover{color:var(--primary)}
-  .doc-title{font-family:var(--serif); font-weight:600; font-size:1rem; letter-spacing:-.01em;
-    margin-left:auto; color:var(--text); text-align:right}
-  .doc{max-width:42rem; margin:0 auto; padding:44px 24px 40px}
-  .doc h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
-    font-size:clamp(2rem,6vw,2.6rem); line-height:1.12; margin:0 0 12px}
-  .meta{color:var(--text-muted); font-size:.92rem; margin:0 0 6px}
-  .doc h2{font-family:var(--serif); font-weight:600; letter-spacing:-.01em;
-    font-size:1.5rem; line-height:1.28; margin:50px 0 14px; padding-top:26px; border-top:1px solid var(--border)}
-  .doc p{margin:0 0 18px}
-  .doc ul{margin:0 0 18px; padding-left:1.35em}
-  .doc li{margin:0 0 9px}
-  .doc strong{font-weight:700; color:var(--text)}
-  .doc em{color:var(--text-secondary)}
-  .doc hr{border:0; border-top:1px solid var(--border-strong); margin:34px 0}
-  .callout{background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent);
-    border-radius:14px; padding:20px 22px; margin:0 0 26px}
-  .callout > :first-child{margin-top:0}
-  .callout > :last-child{margin-bottom:0}
-  .tablewrap{overflow-x:auto; margin:0 0 22px; border:1px solid var(--border); border-radius:14px}
-  table{border-collapse:collapse; width:100%; min-width:480px; font-size:.93rem}
-  th,td{text-align:left; padding:12px 15px; border-bottom:1px solid var(--border); vertical-align:top}
-  th{background:color-mix(in srgb,var(--primary) 8%,transparent); font-weight:600; color:var(--text)}
-  tr:last-child td{border-bottom:0}
-  .doc-foot{max-width:42rem; margin:0 auto; padding:0 24px 64px}
-  .disclaimer{color:var(--text-muted); font-size:.9rem; font-style:italic;
-    border-top:1px solid var(--border); padding-top:22px; margin:0}
-  .backlink{display:inline-block; margin-top:28px; font-weight:600}
-  .doc h3{font-family:var(--serif); font-weight:600; font-size:1.18rem; line-height:1.3; margin:30px 0 10px}
-  .doc ol{margin:0 0 18px; padding-left:1.45em}
-  .doc blockquote{margin:0 0 22px; padding:14px 20px; background:var(--surface); border:1px solid var(--border);
-    border-left:4px solid var(--accent); border-radius:0 14px 14px 0; font-family:var(--serif); font-size:1.06rem}
-  .doc blockquote p{margin:0 0 6px}
-  .doc blockquote sup{font-family:var(--sans); font-size:.7em; color:var(--text-muted); margin:0 2px 0 4px}
-  .doc blockquote cite{display:block; font-style:normal; font-family:var(--sans); font-size:.86rem; color:var(--text-muted)}
-  .doc details{border-bottom:1px solid var(--border); padding:12px 0}
-  .doc details p{margin:10px 0 4px}
-  .doc summary{cursor:pointer; font-weight:600}
-  .related{list-style:none; padding-left:0 !important}
-  .sitefoot{max-width:42rem; margin:0 auto; padding:0 24px 56px; font-size:.88rem; color:var(--text-muted)}
-  .sitefoot nav{display:flex; flex-wrap:wrap; gap:6px 16px; border-top:1px solid var(--border); padding-top:20px; margin-bottom:10px}
-  .sitefoot a{color:var(--text-secondary)}
-</style>
+<link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="home" href="/">&larr; getemmaus.app</a>
-    <span class="doc-title">Studying the Bible</span>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="sitenav" aria-label="Main">
+  <div class="wrap navin">
+    <a class="brand" href="/">Emmaus</a>
+    <div class="navlinks">
+      <a href="/#difference">Why Emmaus</a>
+      <a href="/#day">A day with Emmaus</a>
+      <a href="/#together">Together</a>
+      <details class="gmenu">
+        <summary>Guides</summary>
+        <div class="gpanel">
+          <div>
+          <h3>Start reading</h3>
+          <ul>
+            <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+            <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+            <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+            <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Understand what you read</h3>
+          <ul>
+            <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+            <li><a href="/how-to-study-the-bible-for-beginners/" aria-current="page">How to study the Bible</a></li>
+            <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Prayer and quiet time</h3>
+          <ul>
+            <li><a href="/how-to-pray/">How to pray</a></li>
+            <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+          </ul>
+          <h3>Passages explained</h3>
+          <ul>
+            <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+            <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+          </ul>
+          </div>
+          <p class="gall"><span>Plain, Scripture-first answers for people starting out.</span> <a href="/guides/">See all guides</a></p>
+        </div>
+      </details>
+      <a href="/#faq">Questions</a>
+      <a href="/#pricing">Pricing</a>
+    </div>
+    <a class="btn small" href="https://apps.apple.com/app/id6788956467">Get the app</a>
+  </div>
+</nav>
+
+<header class="pagehead">
+  <div class="wrap">
+    <div class="inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Emmaus</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a></nav>
+      <h1>How to study the Bible for beginners</h1>
+    </div>
   </div>
 </header>
-<main class="doc">
-  <h1>How to study the Bible for beginners</h1>
+
+<div class="wrap article has-toc">
+  <nav class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#why-study-the-bible-at-all">Why study the Bible at all?</a></li>
+      <li><a href="#what-you-need">What you need</a></li>
+      <li><a href="#step-1-choose-one-book">Step 1: Choose one book</a></li>
+      <li><a href="#step-2-read-a-short-passage-more-than-once">Step 2: Read a short passage, more than once</a></li>
+      <li><a href="#step-3-study-it-with-soap">Step 3: Study it with SOAP</a></li>
+      <li><a href="#step-4-use-a-few-simple-tools">Step 4: Use a few simple tools</a></li>
+      <li><a href="#step-5-hide-it-in-your-heart">Step 5: Hide it in your heart</a></li>
+      <li><a href="#a-sample-study-philippians-4-6-7">A sample study: Philippians 4:6-7</a></li>
+      <li><a href="#study-with-others">Study with others</a></li>
+      <li><a href="#how-emmaus-can-help">How Emmaus can help</a></li>
+      <li><a href="#questions-people-ask">Questions people ask</a></li>
+      <li><a href="#keep-reading">Keep reading</a></li>
+    </ol>
+  </nav>
+<main class="doc" id="main">
   <p>To study the Bible as a beginner, choose one book (a Gospel like Mark or a short letter like Philippians), read a short passage slowly, and work through it with four simple steps known as SOAP: write out a key verse (Scripture), note what you see (Observation), decide how it applies to your life (Application), and respond to God (Prayer). Ten to twenty minutes with a notebook is enough to begin.</p>
   <p>Reading the Bible and studying the Bible overlap, but they are a little different. Reading covers more ground and helps you see the big story. Studying slows down on a smaller passage to understand it more deeply. Both are good, and most Christians do some of each.</p>
-  <h2>Why study the Bible at all?</h2>
+  <h2 id="why-study-the-bible-at-all">Why study the Bible at all?</h2>
   <p>Paul told Timothy:</p>
   <blockquote><p>&ldquo;<sup>16</sup>All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: <sup>17</sup>That the man of God may be perfect, throughly furnished unto all good works.&rdquo;</p><cite>2 Timothy 3:16–17 (KJV)</cite></blockquote>
   <p>Studying Scripture isn't only for pastors or scholars. It is for every believer who wants to know God better and live faithfully. The Bereans in Acts are a good example. They &ldquo;received the word with all readiness of mind, and searched the scriptures daily, whether those things were so&rdquo; (Acts 17:11). They were eager, and they checked what they heard against Scripture.</p>
-  <h2>What you need</h2>
+  <h2 id="what-you-need">What you need</h2>
   <ul>
 <li><strong>A Bible you can understand.</strong> Any faithful translation works. Some people like to compare a modern translation with the King James Version.</li>
 <li><strong>A notebook or journal.</strong> Writing slows you down, and slowing down helps you notice.</li>
 <li><strong>A pen or highlighter.</strong></li>
 <li><strong>Optional:</strong> a study Bible, a Bible dictionary or a concordance. These are helpful but not necessary on day one.</li>
 </ul>
-  <h2>Step 1: Choose one book</h2>
+  <h2 id="step-1-choose-one-book">Step 1: Choose one book</h2>
   <p>Instead of jumping around, pick one book and stay with it. Good choices for beginners:</p>
   <ul>
 <li><strong>Mark:</strong> short, fast-moving, centered on Jesus.</li>
@@ -198,9 +198,9 @@
 <li><strong>James:</strong> five practical chapters about living out your faith.</li>
 </ul>
   <p>Before you begin, read a short introduction to the book if you have a study Bible. Knowing who wrote it, to whom, and why, will help you understand every chapter.</p>
-  <h2>Step 2: Read a short passage, more than once</h2>
+  <h2 id="step-2-read-a-short-passage-more-than-once">Step 2: Read a short passage, more than once</h2>
   <p>Choose a small section, often a paragraph or a single chapter. Read it through once to get the main idea. Then read it again slowly. Then, if you can, read it a third time out loud. Each pass shows you something new.</p>
-  <h2>Step 3: Study it with SOAP</h2>
+  <h2 id="step-3-study-it-with-soap">Step 3: Study it with SOAP</h2>
   <p>SOAP is a simple, widely used method for personal Bible study. Here is how it works:</p>
   <h3>S: Scripture</h3>
   <p>Write out one verse or short section that stands out to you. Copying it by hand helps you slow down and notice every word.</p>
@@ -210,7 +210,7 @@
   <p>Now ask how this truth should shape your life. Is there something to believe, to do, to stop doing, or to thank God for? Make it specific and small. "Be more loving" is vague. "Call my sister this week and listen" is something you can do.</p>
   <h3>P: Prayer</h3>
   <p>Turn what you learned into a prayer. Thank God for what you saw. Ask for help to live it. Bring Him your questions too.</p>
-  <h2>Step 4: Use a few simple tools</h2>
+  <h2 id="step-4-use-a-few-simple-tools">Step 4: Use a few simple tools</h2>
   <p>As you grow, a few tools can deepen your study:</p>
   <ul>
 <li><strong>Cross-references:</strong> many Bibles list related verses in the margin. Looking them up lets Scripture explain Scripture.</li>
@@ -218,28 +218,28 @@
 <li><strong>A Bible dictionary:</strong> explains people, places and customs.</li>
 </ul>
   <p>Use these tools to understand the text better, not to replace your own reading of it.</p>
-  <h2>Step 5: Hide it in your heart</h2>
+  <h2 id="step-5-hide-it-in-your-heart">Step 5: Hide it in your heart</h2>
   <p>Choose one verse from your study to memorize. The psalmist wrote:</p>
   <blockquote><p>&ldquo;Thy word have I hid in mine heart, that I might not sin against thee.&rdquo;</p><cite>Psalm 119:11 (KJV)</cite></blockquote>
   <p>Write the verse on a card, read it a few times a day, and review it over the following days and weeks. Memorized Scripture comes back to you when you need it most.</p>
-  <h2>A sample study: Philippians 4:6-7</h2>
+  <h2 id="a-sample-study-philippians-4-6-7">A sample study: Philippians 4:6-7</h2>
   <ul>
 <li><strong>Scripture:</strong> &ldquo;Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God&rdquo; (Philippians 4:6).</li>
 <li><strong>Observation:</strong> "Careful" here means anxious or worried. Paul doesn't just say "stop worrying." He gives an alternative: prayer, with thanksgiving, about everything. Verse 7 promises God's peace will guard our hearts and minds.</li>
 <li><strong>Application:</strong> When I start to worry about work this week, I'll stop and pray about it specifically, and thank God for one thing.</li>
 <li><strong>Prayer:</strong> "Lord, You know what I'm anxious about. I bring it to You now. Thank You for Your care. Guard my heart with Your peace."</li>
 </ul>
-  <h2>Study with others</h2>
+  <h2 id="study-with-others">Study with others</h2>
   <p>Personal study is good, and group study is good too. A small group lets you hear what others noticed, ask questions and stay encouraged. If you don't have a group, ask one friend to study the same book with you. For help with hard passages, see <a href="/how-to-read-the-bible-and-understand-it/">how to read the Bible and understand it</a>.</p>
-  <h2>How Emmaus can help</h2>
+  <h2 id="how-emmaus-can-help">How Emmaus can help</h2>
   <p>Emmaus is a daily discipleship app for iPhone and iPad with tools that fit this kind of study. Its journal uses S.O.A.P. sections, and your journal stays private unless you choose to share a snapshot with a walking partner. When you hit a hard verse, you can ask about it in plain language and be pointed back to the passage. Emmaus can get things wrong, so test what you learn against Scripture. Scripture memory review uses spaced repetition to help you keep the verses you're learning. And the one-chapter-a-day reading path keeps you moving through the whole Bible while you study. Learn more <a href="/about/">about Emmaus</a>.</p>
   <p><em>Emmaus is free to download for iPhone and iPad on the <a href="https://apps.apple.com/us/app/emmaus-walk-with-god/id6788956467">App Store</a>.</em></p>
-  <h2>Questions people ask</h2>
+  <h2 id="questions-people-ask">Questions people ask</h2>
   <details><summary>What is the easiest way to study the Bible for beginners?</summary><p>Pick one book, read a short passage slowly, and use the SOAP method: write out a verse (Scripture), note what you see (Observation), decide how it applies (Application), and respond to God (Prayer).</p></details>
   <details><summary>What book of the Bible should a beginner study first?</summary><p>Mark, John, Philippians and James are all good first choices. They are relatively short and clear, and they center on Jesus and everyday faith.</p></details>
   <details><summary>How long should a Bible study session be?</summary><p>Ten to twenty minutes is a good start. Consistency matters more than length.</p></details>
   <details><summary>What is the difference between reading and studying the Bible?</summary><p>Reading covers more ground and helps you see the big story. Studying slows down on a smaller passage to understand it more deeply. Both are valuable.</p></details>
-  <h2>Keep reading</h2>
+  <h2 id="keep-reading">Keep reading</h2>
   <ul class="related">
     <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
     <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
@@ -253,18 +253,83 @@
     <li><a href="/start-here/">Not ready for church yet? A calm place to start</a></li>
   </ul>
   <p class="disclaimer">Scripture quotations are from the King James Version (public domain).</p>
-  <p class="backlink"><a href="/">&larr; Back to getemmaus.app</a></p>
 </main>
-<footer class="sitefoot">
-  <nav aria-label="Site">
-    <a href="/">Emmaus</a>
-    <a href="/about/">About Emmaus</a>
-    <a href="/start-here/">Start here</a>
-    <a href="/support/">Support</a>
-    <a href="/privacy/">Privacy</a>
-    <a href="/terms/">Terms</a>
-  </nav>
-  <span>&copy; 2026 Disciple Maker LLC</span>
+</div>
+
+<aside class="invite" aria-labelledby="invite-h">
+  <div class="wrap">
+    <h2 id="invite-h">The road starts today.</h2>
+    <p>Come as you are.</p>
+    <div class="act">
+      <a class="btn" href="https://apps.apple.com/app/id6788956467">Get the app</a>
+      <a class="textlink" href="/#pricing">See plans and trial</a>
+      <span class="fine">For iPhone and iPad. Apple shows trial eligibility and billing terms before you confirm.</span>
+    </div>
+  </div>
+</aside>
+
+<footer class="sitefooter">
+  <div class="wrap fgrid">
+    <div class="fbrand">
+      <a class="mark" href="/">Emmaus</a>
+      <p>A daily discipleship tool for iPhone and iPad.</p>
+      <a class="mail" href="mailto:hello@getemmaus.app">hello@getemmaus.app</a>
+    </div>
+    <div class="fcol">
+      <h2>Emmaus</h2>
+      <ul>
+        <li><a href="/spot/">The film</a></li>
+        <li><a href="/about/">About Emmaus</a></li>
+        <li><a href="/start-here/">Start here</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="Guides">
+      <h2>Start reading</h2>
+      <ul>
+        <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+        <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+        <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+        <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+      </ul>
+      <h2>Understand what you read</h2>
+      <ul>
+        <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+        <li><a href="/how-to-study-the-bible-for-beginners/" aria-current="page">How to study the Bible</a></li>
+        <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="More guides">
+      <h2>Prayer and quiet time</h2>
+      <ul>
+        <li><a href="/how-to-pray/">How to pray</a></li>
+        <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+      </ul>
+      <h2>Passages explained</h2>
+      <ul>
+        <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+        <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+      </ul>
+      <p class="all"><a href="/guides/">See all guides</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ffamily">
+      <div>
+        <h2>From the Disciple Maker family</h2>
+        <p>Emmaus is published by Disciple Maker, LLC, the same publisher as <a href="https://goodsoildiscipleship.com/">Good Soil Discipleship</a>, a family and small-group discipleship ministry with a free <a href="https://goodsoildiscipleship.com/family-kit">Family Discipleship Kit</a>, and the <a href="https://goodsoilplanner.com/">Good Soil Planner</a>, a printed 90-day Christian discipleship planner.</p>
+      </div>
+      <div class="badge">
+        <a href="https://applauncher.dev/apps/emmaus/" target="_blank" rel="noopener"><img src="https://applauncher.dev/badge/emmaus.svg?theme=dark&size=md" alt="Emmaus on applauncher.dev" width="204" height="50" loading="lazy" /></a>
+      </div>
+    </div>
+    <div class="flegal">
+      <span class="copy">&copy; 2026 Disciple Maker LLC</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+  </div>
 </footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
