@@ -5,88 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emmaus Privacy Policy: What We Collect and Why</title>
 <meta name="description" content="How Emmaus handles your information: what we collect, why, which service providers process it, and the control you have over your data.">
-<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF6EE">
 <link rel="canonical" href="https://getemmaus.app/privacy/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
 <meta property="og:title" content="Emmaus Privacy Policy: What We Collect and Why">
 <meta property="og:description" content="How Emmaus handles your information: what we collect, why, which service providers process it, and the control you have over your data.">
 <meta name="twitter:title" content="Emmaus Privacy Policy: What We Collect and Why">
 <meta name="twitter:description" content="How Emmaus handles your information: what we collect, why, which service providers process it, and the control you have over your data.">
-<style>
-  :root{
-    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB; --border-strong:#D9CBB4;
-    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#7A6C5C;
-    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B; --accent-text:#8A5E12;
-    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --focus:rgba(94,127,70,.5); --bar:rgba(251,246,238,.85);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#171310; --surface:#211B15; --border:#362D23; --border-strong:#4A3E31;
-      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
-      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C; --accent-text:#E0B15C;
-      --focus:rgba(159,187,134,.6); --bar:rgba(23,19,16,.85);
-    }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
-  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
-    line-height:1.72; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
-  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:6px}
-  a{color:var(--primary); text-decoration:underline; text-underline-offset:2px}
-  a:hover{color:var(--primary-hover)}
-  .topbar{position:sticky; top:0; z-index:5; background:var(--bar);
-    -webkit-backdrop-filter:saturate(1.3) blur(8px); backdrop-filter:saturate(1.3) blur(8px);
-    border-bottom:1px solid var(--border)}
-  .topbar-inner{max-width:46rem; margin:0 auto; padding:13px 24px; display:flex; align-items:center; gap:14px}
-  .home{display:inline-flex; align-items:center; gap:6px; font-size:.9rem; font-weight:600;
-    color:var(--text-secondary); text-decoration:none; white-space:nowrap}
-  .home:hover{color:var(--primary)}
-  .doc-title{font-family:var(--serif); font-weight:600; font-size:1rem; letter-spacing:-.01em;
-    margin-left:auto; color:var(--text); text-align:right}
-  .doc{max-width:42rem; margin:0 auto; padding:44px 24px 40px}
-  .doc h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
-    font-size:clamp(2rem,6vw,2.6rem); line-height:1.12; margin:0 0 12px}
-  .meta{color:var(--text-muted); font-size:.92rem; margin:0 0 6px}
-  .doc h2{font-family:var(--serif); font-weight:600; letter-spacing:-.01em;
-    font-size:1.5rem; line-height:1.28; margin:50px 0 14px; padding-top:26px; border-top:1px solid var(--border)}
-  .doc h3{font-family:var(--serif); font-weight:600; font-size:1.18rem; margin:30px 0 12px}
-  .doc,.doc-foot{overflow-wrap:anywhere}
-  .doc p{margin:0 0 18px}
-  .doc ul,.doc ol{margin:0 0 18px; padding-left:1.35em}
-  .doc li{margin:0 0 9px}
-  .doc strong{font-weight:700; color:var(--text)}
-  .doc em{color:var(--text-secondary)}
-  .doc code{font-size:.9em; overflow-wrap:anywhere}
-  .doc hr{border:0; border-top:1px solid var(--border-strong); margin:34px 0}
-  .callout{background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent);
-    border-radius:14px; padding:20px 22px; margin:0 0 26px}
-  .callout > :first-child{margin-top:0}
-  .callout > :last-child{margin-bottom:0}
-  .tablewrap{overflow-x:auto; margin:0 0 22px; border:1px solid var(--border); border-radius:14px}
-  table{border-collapse:collapse; width:100%; min-width:480px; font-size:.93rem}
-  th,td{text-align:left; padding:12px 15px; border-bottom:1px solid var(--border); vertical-align:top}
-  th{background:color-mix(in srgb,var(--primary) 8%,transparent); font-weight:600; color:var(--text)}
-  tr:last-child td{border-bottom:0}
-  .doc-foot{max-width:42rem; margin:0 auto; padding:0 24px 64px}
-  .disclaimer{color:var(--text-muted); font-size:.9rem; font-style:italic;
-    border-top:1px solid var(--border); padding-top:22px; margin:0}
-  .backlink{display:inline-block; margin-top:28px; font-weight:600}
-</style>
+<link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="home" href="/">&larr; getemmaus.app</a>
-    <span class="doc-title">Privacy Policy</span>
+<nav class="sitenav" aria-label="Main">
+  <div class="wrap navin">
+    <a class="brand" href="/">Emmaus</a>
+    <div class="navlinks">
+      <a href="/#difference">Why Emmaus</a>
+      <a href="/#day">A day with Emmaus</a>
+      <a href="/#together">Together</a>
+      <details class="gmenu">
+        <summary>Guides</summary>
+        <div class="gpanel">
+          <div>
+          <h3>Start reading</h3>
+          <ul>
+            <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+            <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+            <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+            <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Understand what you read</h3>
+          <ul>
+            <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+            <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+            <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Prayer and quiet time</h3>
+          <ul>
+            <li><a href="/how-to-pray/">How to pray</a></li>
+            <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+          </ul>
+          <h3>Passages explained</h3>
+          <ul>
+            <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+            <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+          </ul>
+          </div>
+          <p class="gall"><span>Plain, Scripture-first answers for people starting out.</span> <a href="/guides/">See all guides</a></p>
+        </div>
+      </details>
+      <a href="/#faq">Questions</a>
+      <a href="/#pricing">Pricing</a>
+    </div>
+    <a class="btn small" href="https://apps.apple.com/app/id6788956467">Get the app</a>
+  </div>
+</nav>
+
+<header class="pagehead">
+  <div class="wrap">
+    <div class="inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Emmaus</a></nav>
+      <h1>Emmaus — Privacy Policy</h1>
+    </div>
   </div>
 </header>
 
-<article class="doc">
-<h1>Emmaus — Privacy Policy</h1>
+<div class="wrap article has-toc">
+  <nav class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#1-information-we-collect">1. Information We Collect</a></li>
+      <li><a href="#2-how-we-use-your-information-purposes">2. How We Use Your Information (Purposes)</a></li>
+      <li><a href="#3-data-retention">3. Data Retention</a></li>
+      <li><a href="#4-ai-processing-and-sub-processors-important-disclosure">4. AI Processing and Sub-Processors (Important Disclosure)</a></li>
+      <li><a href="#5-how-we-share-information">5. How We Share Information</a></li>
+      <li><a href="#6-safety-moderation-and-crisis-handling">6. Safety, Moderation, and Crisis Handling</a></li>
+      <li><a href="#7-security">7. Security</a></li>
+      <li><a href="#8-your-choices-and-controls">8. Your Choices and Controls</a></li>
+      <li><a href="#9-children-s-privacy">9. Children's Privacy</a></li>
+      <li><a href="#10-international-users-and-data-transfers">10. International Users and Data Transfers</a></li>
+      <li><a href="#11-changes-to-this-policy">11. Changes to This Policy</a></li>
+      <li><a href="#12-contact-us">12. Contact Us</a></li>
+    </ol>
+  </nav>
+<main class="doc" id="main">
 
 <p class="meta"><strong>Last updated: November 11, 2026</strong><br>
 <strong>Effective date: when the Android version of the App is first released on Google Play</strong></p>
@@ -117,7 +126,7 @@
 
 <hr>
 
-<h2>1. Information We Collect</h2>
+<h2 id="1-information-we-collect">1. Information We Collect</h2>
 
 <p>We collect the following categories of information, all provided by you or generated through your use of the App.</p>
 
@@ -185,7 +194,7 @@
   <li><strong>Last opened.</strong> When you open the App we record the time you last opened it and the <strong>calendar days</strong> on which you opened it. These are dates only — no content, location, or device details. We use them to decide whether a check-in email is due (if you agreed to them) and, in aggregate, to understand whether people come back to Emmaus (for example, what share of new accounts return a week later).</li>
 </ul>
 
-<h2>2. How We Use Your Information (Purposes)</h2>
+<h2 id="2-how-we-use-your-information-purposes">2. How We Use Your Information (Purposes)</h2>
 
 <p>We use your information only for the following purposes:</p>
 
@@ -204,7 +213,7 @@
 
 <p><strong>We do not use your information to sell to third parties, to serve you ads, or to track you across other companies' apps or websites.</strong></p>
 
-<h2>3. Data Retention</h2>
+<h2 id="3-data-retention">3. Data Retention</h2>
 
 <p>We keep your information for as long as your account is active and as needed to provide the App. Specifically:</p>
 
@@ -225,7 +234,7 @@
   <li>We may retain limited information longer where required to comply with legal obligations, resolve disputes, or enforce our agreements.</li>
 </ul>
 
-<h2>4. AI Processing and Sub-Processors (Important Disclosure)</h2>
+<h2 id="4-ai-processing-and-sub-processors-important-disclosure">4. AI Processing and Sub-Processors (Important Disclosure)</h2>
 
 <p>To provide AI features, we share the content you submit with trusted service providers ("<strong>sub-processors</strong>") that process it <strong>on our behalf and under contract</strong>, only to deliver the service to you. We select providers that offer the same or equal protection required by applicable law and by Apple's guidelines.</p>
 
@@ -271,7 +280,7 @@
 
 <p>We may engage other sub-processors as the App evolves; if we make a material change to how AI processing works, we will update this policy and, where appropriate, ask for renewed consent.</p>
 
-<h2>5. How We Share Information</h2>
+<h2 id="5-how-we-share-information">5. How We Share Information</h2>
 
 <p>We share information <strong>only</strong> as described here:</p>
 
@@ -314,11 +323,11 @@
 
 <p>Aside from this, and aside from anything you deliberately send out of the App yourself, your content stays private to your account.</p>
 
-<h2>6. Safety, Moderation, and Crisis Handling</h2>
+<h2 id="6-safety-moderation-and-crisis-handling">6. Safety, Moderation, and Crisis Handling</h2>
 
 <p>To keep the App safe, we operate automated safety systems, including a <strong>crisis-detection tripwire</strong> and <strong>content moderation</strong> that run on messages to and from the AI. If the system detects signals of self-harm, suicide, abuse, child abuse, or danger, the AI responds with a scripted compassionate message and <strong>real crisis resources</strong> (for example, the U.S. 988 Suicide &amp; Crisis Lifeline, Crisis Text Line at 741741, the National Domestic Violence Hotline at 1-800-799-7233, the Childhelp National Child Abuse Hotline at 1-800-422-4453, and 911 for emergencies). This deterministic route does not call an AI provider and remains available even if AI processing is turned off or feature limits have been reached. Every AI message includes a <strong>"Report a concern"</strong> control; reports are retained as immutable evidence for review, and the owner receives a minimal-content operational alert as described in Section 1.7. We keep minimal safety-event records as described in Section 3. <strong>The App is not monitored continuously and is not a crisis service — in an emergency, contact 988 or 911 (or your local emergency number).</strong></p>
 
-<h2>7. Security</h2>
+<h2 id="7-security">7. Security</h2>
 
 <p>We protect your information with administrative, technical, and physical safeguards appropriate to its sensitivity, including:</p>
 
@@ -331,7 +340,7 @@
 
 <p>No method of transmission or storage is 100% secure, and we cannot guarantee absolute security, but we work to protect your information and to promptly address issues we become aware of.</p>
 
-<h2>8. Your Choices and Controls</h2>
+<h2 id="8-your-choices-and-controls">8. Your Choices and Controls</h2>
 
 <p>You are in control of your data. From within the App you can:</p>
 
@@ -351,7 +360,7 @@
 
 <p>Depending on where you live, you may have additional rights under laws such as the <strong>California Consumer Privacy Act (CCPA/CPRA)</strong> or the <strong>EU/UK GDPR</strong> — including rights to access, correct, delete, and port your data, and to object to or restrict certain processing. Because most of these controls are built directly into the App, you can exercise them yourself at any time; you may also contact us at <strong>support@getemmaus.app</strong> and we will respond as required by law. We will not discriminate against you for exercising your privacy rights. Where processing is based on your choice to use AI features, you can stop at any time and delete what the App remembers about you in Settings.</p>
 
-<h2>9. Children's Privacy</h2>
+<h2 id="9-children-s-privacy">9. Children's Privacy</h2>
 
 <p><em>[Updated — Android]</em> <strong>The Android app is for ages 13 and up.</strong> It does not offer the parent-managed process below and does not open an account for a child under 13; a parent-approved child account continues to work on iPhone and iPad.</p>
 
@@ -363,26 +372,88 @@
 
 <p>Apple's age-range signal helps minimize data, but Emmaus remains responsible for obtaining and honoring consent. A manual age-range fallback is provided when Apple does not share a range or the API is unavailable. If you believe a child bypassed the process or provided information without valid permission, contact <strong>support@getemmaus.app</strong> and we will investigate and delete it as required. Users 13 through the age of majority should involve a parent or guardian where applicable law requires it.</p>
 
-<h2>10. International Users and Data Transfers</h2>
+<h2 id="10-international-users-and-data-transfers">10. International Users and Data Transfers</h2>
 
 <p>Emmaus operates in the <strong>United States</strong>, and your information is processed and stored in the United States and in the regions used by our sub-processors. If you access the App from outside the United States, you understand that your information will be transferred to and processed in the United States, where data-protection laws may differ from those in your country. Where required, we rely on appropriate safeguards for such transfers.</p>
 
-<h2>11. Changes to This Policy</h2>
+<h2 id="11-changes-to-this-policy">11. Changes to This Policy</h2>
 
 <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Last updated" date above and, where appropriate, provide notice in the App. If a change materially expands how we use or share your information — including changes to AI processing — we will seek your consent where required. Your continued use of the App after an update takes effect constitutes acceptance of the updated policy.</p>
 
-<h2>12. Contact Us</h2>
+<h2 id="12-contact-us">12. Contact Us</h2>
 
 <p>If you have questions, requests, or concerns about this Privacy Policy or your data, contact us at:</p>
 
 <p><strong>Disciple Maker LLC</strong> Email: <strong>support@getemmaus.app</strong> 126 Hammocks Court, Green Acres, Florida 33413</p>
-</article>
-
+</main>
 <div class="doc-foot">
   <p class="disclaimer">This policy should be reviewed by qualified privacy counsel before publication. The disclosures must remain consistent with the released App, the public website, provider contracts, and the App Store Connect privacy answers.</p>
-  <a class="backlink" href="/terms/">Read the Terms of Use</a><br>
-  <a class="backlink" href="/">&larr; Back to getemmaus.app</a>
+  <a class="backlink" href="/terms/">Read the Terms of Use</a>
+</div>
 </div>
 
+<footer class="sitefooter">
+  <div class="wrap fgrid">
+    <div class="fbrand">
+      <a class="mark" href="/">Emmaus</a>
+      <p>A daily discipleship tool for iPhone and iPad.</p>
+      <a class="mail" href="mailto:hello@getemmaus.app">hello@getemmaus.app</a>
+    </div>
+    <div class="fcol">
+      <h2>Emmaus</h2>
+      <ul>
+        <li><a href="/spot/">The film</a></li>
+        <li><a href="/about/">About Emmaus</a></li>
+        <li><a href="/start-here/">Start here</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="Guides">
+      <h2>Start reading</h2>
+      <ul>
+        <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+        <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+        <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+        <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+      </ul>
+      <h2>Understand what you read</h2>
+      <ul>
+        <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+        <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+        <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="More guides">
+      <h2>Prayer and quiet time</h2>
+      <ul>
+        <li><a href="/how-to-pray/">How to pray</a></li>
+        <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+      </ul>
+      <h2>Passages explained</h2>
+      <ul>
+        <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+        <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+      </ul>
+      <p class="all"><a href="/guides/">See all guides</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ffamily">
+      <div>
+        <h2>From the Disciple Maker family</h2>
+        <p>Emmaus is published by Disciple Maker, LLC, the same publisher as <a href="https://goodsoildiscipleship.com/">Good Soil Discipleship</a>, a family and small-group discipleship ministry with a free <a href="https://goodsoildiscipleship.com/family-kit">Family Discipleship Kit</a>, and the <a href="https://goodsoilplanner.com/">Good Soil Planner</a>, a printed 90-day Christian discipleship planner.</p>
+      </div>
+      <div class="badge">
+        <a href="https://applauncher.dev/apps/emmaus/" target="_blank" rel="noopener"><img src="https://applauncher.dev/badge/emmaus.svg?theme=dark&size=md" alt="Emmaus on applauncher.dev" width="204" height="50" loading="lazy" /></a>
+      </div>
+    </div>
+    <div class="flegal">
+      <span class="copy">&copy; 2026 Disciple Maker LLC</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

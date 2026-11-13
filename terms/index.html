@@ -5,79 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms of Use — Emmaus</title>
 <meta name="description" content="The End-User License Agreement and Terms of Use for the Emmaus app, including subscription, AI, safety, and Apple-specific terms.">
-<meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171310" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF6EE">
 <link rel="canonical" href="https://getemmaus.app/terms/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23FBF6EE'/%3E%3Ccircle%20cx='16'%20cy='19'%20r='6.5'%20fill='%23C68A2B'/%3E%3Cpath%20d='M0%2019h32v13H0z'%20fill='%234A6B3C'/%3E%3C/svg%3E">
-<style>
-  :root{
-    --bg:#FBF6EE; --surface:#FFFDF9; --border:#E7DCCB; --border-strong:#D9CBB4;
-    --text:#2A2018; --text-secondary:#5C4F42; --text-muted:#7A6C5C;
-    --primary:#4A6B3C; --primary-hover:#3A5230; --accent:#C68A2B; --accent-text:#8A5E12;
-    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --focus:rgba(94,127,70,.5); --bar:rgba(251,246,238,.85);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#171310; --surface:#211B15; --border:#362D23; --border-strong:#4A3E31;
-      --text:#F3EADB; --text-secondary:#CBBBA6; --text-muted:#9C8D7A;
-      --primary:#8FB07A; --primary-hover:#A3C08E; --accent:#E0B15C; --accent-text:#E0B15C;
-      --focus:rgba(159,187,134,.6); --bar:rgba(23,19,16,.85);
-    }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
-  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
-    line-height:1.72; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
-  :focus-visible{outline:2px solid var(--focus); outline-offset:3px; border-radius:6px}
-  a{color:var(--primary); text-decoration:underline; text-underline-offset:2px; word-break:break-word}
-  a:hover{color:var(--primary-hover)}
-  .topbar{position:sticky; top:0; z-index:5; background:var(--bar);
-    -webkit-backdrop-filter:saturate(1.3) blur(8px); backdrop-filter:saturate(1.3) blur(8px);
-    border-bottom:1px solid var(--border)}
-  .topbar-inner{max-width:46rem; margin:0 auto; padding:13px 24px; display:flex; align-items:center; gap:14px}
-  .home{display:inline-flex; align-items:center; gap:6px; font-size:.9rem; font-weight:600;
-    color:var(--text-secondary); text-decoration:none; white-space:nowrap}
-  .home:hover{color:var(--primary)}
-  .doc-title{font-family:var(--serif); font-weight:600; font-size:1rem; letter-spacing:-.01em;
-    margin-left:auto; color:var(--text); text-align:right}
-  .doc{max-width:42rem; margin:0 auto; padding:44px 24px 40px}
-  .doc h1{font-family:var(--serif); font-weight:600; letter-spacing:-.02em;
-    font-size:clamp(1.9rem,5.5vw,2.5rem); line-height:1.14; margin:0 0 12px}
-  .meta{color:var(--text-muted); font-size:.92rem; margin:0 0 6px}
-  .doc h2{font-family:var(--serif); font-weight:600; letter-spacing:-.01em;
-    font-size:1.42rem; line-height:1.3; margin:48px 0 14px; padding-top:26px; border-top:1px solid var(--border)}
-  .doc h3{font-family:var(--serif); font-weight:600; font-size:1.18rem; margin:30px 0 12px}
-  .doc,.doc-foot{overflow-wrap:anywhere}
-  .doc p{margin:0 0 18px}
-  .doc ul,.doc ol{margin:0 0 18px; padding-left:1.35em}
-  .doc li{margin:0 0 9px}
-  .doc strong{font-weight:700; color:var(--text)}
-  .doc em{color:var(--text-secondary)}
-  .doc code{font-size:.9em; overflow-wrap:anywhere}
-  .doc hr{border:0; border-top:1px solid var(--border-strong); margin:34px 0}
-  .callout{background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent);
-    border-radius:14px; padding:20px 22px; margin:0 0 26px}
-  .callout > :first-child{margin-top:0}
-  .callout > :last-child{margin-bottom:0}
-  .doc-foot{max-width:42rem; margin:0 auto; padding:0 24px 64px}
-  .disclaimer{color:var(--text-muted); font-size:.9rem; font-style:italic;
-    border-top:1px solid var(--border); padding-top:22px; margin:0}
-  .backlink{display:inline-block; margin-top:28px; font-weight:600}
-</style>
+<link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="home" href="/">&larr; getemmaus.app</a>
-    <span class="doc-title">Terms of Use</span>
+<nav class="sitenav" aria-label="Main">
+  <div class="wrap navin">
+    <a class="brand" href="/">Emmaus</a>
+    <div class="navlinks">
+      <a href="/#difference">Why Emmaus</a>
+      <a href="/#day">A day with Emmaus</a>
+      <a href="/#together">Together</a>
+      <details class="gmenu">
+        <summary>Guides</summary>
+        <div class="gpanel">
+          <div>
+          <h3>Start reading</h3>
+          <ul>
+            <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+            <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+            <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+            <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Understand what you read</h3>
+          <ul>
+            <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+            <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+            <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Prayer and quiet time</h3>
+          <ul>
+            <li><a href="/how-to-pray/">How to pray</a></li>
+            <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+          </ul>
+          <h3>Passages explained</h3>
+          <ul>
+            <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+            <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+          </ul>
+          </div>
+          <p class="gall"><span>Plain, Scripture-first answers for people starting out.</span> <a href="/guides/">See all guides</a></p>
+        </div>
+      </details>
+      <a href="/#faq">Questions</a>
+      <a href="/#pricing">Pricing</a>
+    </div>
+    <a class="btn small" href="https://apps.apple.com/app/id6788956467">Get the app</a>
+  </div>
+</nav>
+
+<header class="pagehead">
+  <div class="wrap">
+    <div class="inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Emmaus</a></nav>
+      <h1>Emmaus — End-User License Agreement &amp; Terms of Use</h1>
+    </div>
   </div>
 </header>
 
-<article class="doc">
-<h1>Emmaus — End-User License Agreement &amp; Terms of Use</h1>
+<div class="wrap article has-toc">
+  <nav class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#1-the-app-and-its-purpose">1. The App and Its Purpose</a></li>
+      <li><a href="#2-eligibility-and-age-requirements">2. Eligibility and Age Requirements</a></li>
+      <li><a href="#3-license-grant-and-scope-of-license">3. License Grant and Scope of License</a></li>
+      <li><a href="#4-subscriptions-free-trial-and-auto-renewal">4. Subscriptions, Free Trial, and Auto-Renewal</a></li>
+      <li><a href="#5-accounts-and-security">5. Accounts and Security</a></li>
+      <li><a href="#6-artificial-intelligence-how-it-works-and-its-limits">6. Artificial Intelligence — How It Works and Its Limits</a></li>
+      <li><a href="#7-not-medical-mental-health-crisis-or-professional-care">7. Not Medical, Mental-Health, Crisis, or Professional Care</a></li>
+      <li><a href="#8-acceptable-use">8. Acceptable Use</a></li>
+      <li><a href="#9-user-content">9. User Content</a></li>
+      <li><a href="#10-account-deletion-and-data-rights">10. Account Deletion and Data Rights</a></li>
+      <li><a href="#11-intellectual-property">11. Intellectual Property</a></li>
+      <li><a href="#12-third-party-services-and-external-content">12. Third-Party Services and External Content</a></li>
+      <li><a href="#13-disclaimer-of-warranties">13. Disclaimer of Warranties</a></li>
+      <li><a href="#14-limitation-of-liability">14. Limitation of Liability</a></li>
+      <li><a href="#15-indemnification">15. Indemnification</a></li>
+      <li><a href="#16-governing-law-and-dispute-resolution">16. Governing Law and Dispute Resolution</a></li>
+      <li><a href="#17-termination">17. Termination</a></li>
+      <li><a href="#18-apple-specific-terms-required">18. Apple-Specific Terms (Required)</a></li>
+      <li><a href="#19-changes-to-this-agreement">19. Changes to This Agreement</a></li>
+      <li><a href="#20-general">20. General</a></li>
+      <li><a href="#21-contact">21. Contact</a></li>
+    </ol>
+  </nav>
+<main class="doc" id="main">
 
 <p class="meta"><strong>Last updated: November 4, 2026</strong><br>
 <strong>Effective date: when the version containing the parental-consent controls is released</strong></p>
@@ -94,25 +117,25 @@
 
 <hr>
 
-<h2>1. The App and Its Purpose</h2>
+<h2 id="1-the-app-and-its-purpose">1. The App and Its Purpose</h2>
 
 <p>Emmaus is an evangelical, non-denominational Christian discipleship application. Rooted in the Parable of the Sower, its purpose is to help you grow in your relationship with God through daily Scripture, personalized devotionals, guided prayer and reflection (including a nightly examen and weekly review), Scripture memorization, goal and "Future Self" reflection, and a conversational AI feature (the "<strong>AI Chat</strong>" or "<strong>Coach</strong>") that can remember details you share in order to walk alongside you over time.</p>
 
 <p><strong>Sharing in the App is invitation-only and narrow.</strong> There is no public posting, no feed, and no directory of users, and nothing you write is visible to anyone you have not personally invited or accepted. Prayer requests start private; you choose individually which ones to share. In a <strong>walking-partner</strong> connection each of you can see only the prayer requests the other chooses to share, plus daily rhythms and current focus, and in a <strong>discipling</strong> connection only the discipler sees those things about the disciple. Either person may send the other short encouragements, and either may end the connection at any time. Your conversations with the AI Chat, your journal and examen entries, and your saved verses are <strong>never</strong> shared with a partner or a discipler. See the <a href="/privacy/">Privacy Policy</a> for the full picture.</p>
 
-<h2>2. Eligibility and Age Requirements</h2>
+<h2 id="2-eligibility-and-age-requirements">2. Eligibility and Age Requirements</h2>
 
 <p>Emmaus uses a coarse <strong>age range</strong>, not a birth date, before account creation. A person under 13 may use the App only through the parent-managed process: Emmaus first sends the parent or legal guardian a direct notice, receives the signed consent form through the private emailed link, records the permission automatically on submission, and then permits an account using the parent-controlled email address approved on that form. Until approval, the App does not collect the child's name, email, prayers, journals, voice, coach messages, or other account content. The parent separately controls AI, voice, and walking-partner connections and may review, correct, delete, or withdraw permission for the child account. Users 13 through the age of majority should involve a parent or guardian where applicable law requires it. See the Privacy Policy, Section 9.</p>
 
 <p>You also represent that you are not barred from using the App under the laws of the United States or any other applicable jurisdiction, and that your use complies with all applicable laws.</p>
 
-<h2>3. License Grant and Scope of License</h2>
+<h2 id="3-license-grant-and-scope-of-license">3. License Grant and Scope of License</h2>
 
 <p>Subject to your compliance with this Agreement, Emmaus grants you a <strong>limited, non-exclusive, non-transferable, non-sublicensable, revocable license</strong> to download and use one copy of the App on any Apple-branded product that you own or control, as permitted by the <strong>Usage Rules</strong> set forth in the Apple Media Services Terms and Conditions and the Apple Standard EULA.</p>
 
 <p>This license does not allow you to use the App on any device you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time, except as expressly permitted by Apple's Usage Rules. The App is <strong>licensed, not sold</strong>, to you. Emmaus and its licensors retain all right, title, and interest in and to the App not expressly granted to you.</p>
 
-<h2>4. Subscriptions, Free Trial, and Auto-Renewal</h2>
+<h2 id="4-subscriptions-free-trial-and-auto-renewal">4. Subscriptions, Free Trial, and Auto-Renewal</h2>
 
 <p>The App is free to download. Continued use of its features requires an <strong>auto-renewing subscription</strong> (the "<strong>Subscription</strong>") purchased through <strong>Apple In-App Purchase</strong>, unless your account has an active trial or other access entitlement. <strong>Apple introductory offers depend on the selected plan and your Apple Account's eligibility; a free trial is not guaranteed for every account.</strong> Apple shows the applicable trial, price, and billing terms before you confirm. Parent-disabled features remain off for an under-13 account, including during a trial. If your trial or Subscription lapses, your content — journals, prayers, remembered facts, partner connections, and everything else you have created — is <strong>not deleted</strong>: you keep access to account settings, data export, and account deletion (Section 10), and full access resumes if you subscribe. This describes the App as of the current version; see Section 4.6.</p>
 
@@ -132,11 +155,11 @@
 
 <p><strong>4.7 Restore purchases.</strong> You can restore an active subscription across your devices using the <strong>Restore Purchases</strong> control in the App.</p>
 
-<h2>5. Accounts and Security</h2>
+<h2 id="5-accounts-and-security">5. Accounts and Security</h2>
 
 <p>To use most features you must create an account using email and password, an email sign-in link, or <strong>Sign in with Apple</strong>. Under-13 accounts must instead use the parent-managed email approved in the parental-consent process. You agree to provide accurate information, to keep your credentials confidential, and to be responsible for all activity under your account. Notify us at <strong>support@getemmaus.app</strong> if you suspect unauthorized use. You may delete your account at any time from within the App (see Section 10).</p>
 
-<h2>6. Artificial Intelligence — How It Works and Its Limits</h2>
+<h2 id="6-artificial-intelligence-how-it-works-and-its-limits">6. Artificial Intelligence — How It Works and Its Limits</h2>
 
 <p><strong>6.1 AI-generated content.</strong> AI Chat and certain other features (devotionals, morning briefs, reflection prompts, weekly reviews, and voice responses) are generated using artificial-intelligence models operated by third-party providers, including <strong>Anthropic</strong> (which powers AI Chat) and <strong>OpenAI</strong> (which powers voice text-to-speech, speech-to-text, text embeddings, and safety moderation of AI Chat input and output). To generate and safety-check responses, the content you share — including chat messages, prayer requests, journal and examen entries, goals, profile details, and remembered facts, and, for voice, audio you record — is transmitted to these providers to process your request.</p>
 
@@ -148,7 +171,7 @@
 
 <p><strong>6.4 Doctrinal posture.</strong> Emmaus is designed to reflect a grace-centered, historic, non-denominational evangelical Christian perspective and to hold secondary and disputed doctrinal matters with humility, pointing you to Scripture, prayer, and your local church rather than dictating a position. AI output nonetheless represents software output, not the official teaching of any church, denomination, or ministry, and should not be treated as doctrinal authority.</p>
 
-<h2>7. Not Medical, Mental-Health, Crisis, or Professional Care</h2>
+<h2 id="7-not-medical-mental-health-crisis-or-professional-care">7. Not Medical, Mental-Health, Crisis, or Professional Care</h2>
 
 <p><strong>Emmaus is a spiritual-growth and wellness tool, not a medical device or a health-care, mental-health, crisis, legal, or financial service.</strong> The App does not diagnose, treat, cure, prevent, or mitigate any disease or condition, and it does not provide medical, psychological, psychiatric, clinical, crisis-intervention, legal, or financial advice. Nothing in the App is intended to be, or should be relied on as, a substitute for the advice of a qualified physician, licensed mental-health professional, attorney, financial advisor, or other licensed professional, or for the care and community of a local church.</p>
 
@@ -156,7 +179,7 @@
 
 <p><strong>Crisis notice.</strong> The App is not a crisis service and cannot provide emergency help. <strong>If you are experiencing a medical or mental-health emergency, are in crisis, or may harm yourself or others, call or text 988 (the U.S. Suicide &amp; Crisis Lifeline), text HOME to 741741 (Crisis Text Line), or call 911 (or your local emergency number) immediately.</strong> If you are outside the United States, contact your local emergency services or a crisis line listed at findahelpline.com.</p>
 
-<h2>8. Acceptable Use</h2>
+<h2 id="8-acceptable-use">8. Acceptable Use</h2>
 
 <p>You agree to use the App lawfully and consistently with its purpose. You will <strong>not</strong>, and will not attempt to, and will not permit anyone else to:</p>
 
@@ -176,7 +199,7 @@
 
 <p>We may investigate and take appropriate action, including removing content, limiting or suspending features, and terminating access, for any violation of this Section.</p>
 
-<h2>9. User Content</h2>
+<h2 id="9-user-content">9. User Content</h2>
 
 <p><strong>9.1 Your content.</strong> "<strong>User Content</strong>" means the content you create or submit in the App — for example, chat messages, prayer requests, journal and examen entries, goals, notes, remembered facts, voice recordings, the invitations you send, and the <strong>encouragements</strong> you send to a walking partner or someone you are discipling. As between you and Emmaus, <strong>you retain ownership of your User Content.</strong></p>
 
@@ -186,7 +209,7 @@
 
 <p><strong>9.4 Feedback.</strong> If you send us suggestions or feedback, you grant us a perpetual, irrevocable, royalty-free license to use it without restriction or obligation to you.</p>
 
-<h2>10. Account Deletion and Data Rights</h2>
+<h2 id="10-account-deletion-and-data-rights">10. Account Deletion and Data Rights</h2>
 
 <p>You may <strong>delete your account and associated personal data from within the App</strong> at any time, in <strong>Settings → Your data → Delete account</strong>. This is a hard deletion, not a deactivation: it permanently removes your profile, journals, examens, prayer requests, goals, AI memories, reflections, connections, the invitations you created, the encouragements you sent and received, and related data from our systems, subject to the retention and backup practices described in the Privacy Policy. You may also <strong>export your data</strong> (<strong>Settings → Your data → Export my data</strong>) and manage or erase the AI's memories from within the App.</p>
 
@@ -199,19 +222,19 @@
   <li><strong>It does not revoke your Sign in with Apple tokens.</strong> If you signed in with Apple, deleting your Emmaus account deletes your account and data on our side, but <strong>Emmaus does not currently call Apple's token-revocation endpoint on your behalf.</strong> You can stop Emmaus from using your Apple ID yourself, at any time, in iOS <strong>Settings → [your name] → Sign-In &amp; Security → Sign in with Apple → Emmaus → Stop using Apple ID.</strong> We would rather point you to the switch that works than tell you we threw it for you.</li>
 </ul>
 
-<h2>11. Intellectual Property</h2>
+<h2 id="11-intellectual-property">11. Intellectual Property</h2>
 
 <p>The App, including its software, design, user interface, text, graphics, logos, the "Emmaus" name and marks, curated content, prompts, and all related intellectual property, is owned by Emmaus or its licensors and is protected by United States and international intellectual-property laws. Except for the limited license in Section 3, no rights are granted to you.</p>
 
 <p><strong>Scripture.</strong> The App bundles Bible translations that are in the <strong>public domain or freely licensed</strong> — the Berean Standard Bible (BSB, CC0), the World English Bible (WEB), the King James Version (KJV), and the American Standard Version (ASV) — together with certain openly licensed reference materials, which are attributed in the App's credits. Third-party trademarks and content are the property of their respective owners.</p>
 
-<h2>12. Third-Party Services and External Content</h2>
+<h2 id="12-third-party-services-and-external-content">12. Third-Party Services and External Content</h2>
 
 <p>The App relies on and interoperates with third-party services, including <strong>Apple</strong> (App Store, In-App Purchase, Sign in with Apple), <strong>Supabase</strong> (hosting and data storage), <strong>Anthropic</strong> and <strong>OpenAI</strong> (AI processing), <strong>RevenueCat</strong> (subscription management), and <strong>Resend</strong> (delivery of the email we send you, such as the welcome message). Your use of those services may be subject to their own terms and policies.</p>
 
 <p>The App also fetches public-domain Scripture from <strong><code>bible-api.com</code></strong> directly from your device when a passage is not in our own library. That request carries the passage reference and nothing about you; <code>bible-api.com</code> is a free public service we have no contract with, and it is not a sub-processor. See the Privacy Policy, Section 4. The App may also display links or resources (for example, crisis hotlines) operated by third parties. Emmaus does not control and is not responsible for third-party services or content, and providing a link or resource is not an endorsement or a guarantee of availability, accuracy, or outcome. Any external crisis resources are provided for convenience; you are responsible for contacting appropriate emergency or professional help.</p>
 
-<h2>13. Disclaimer of Warranties</h2>
+<h2 id="13-disclaimer-of-warranties">13. Disclaimer of Warranties</h2>
 
 <p><strong>THE APP AND ALL CONTENT AND FEATURES, INCLUDING AI-GENERATED CONTENT, ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.</strong> To the maximum extent permitted by applicable law, Emmaus and its licensors and suppliers <strong>disclaim all warranties</strong>, whether express, implied, statutory, or otherwise, including any implied warranties of merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy, and non-infringement.</p>
 
@@ -219,7 +242,7 @@
 
 <p>Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.</p>
 
-<h2>14. Limitation of Liability</h2>
+<h2 id="14-limitation-of-liability">14. Limitation of Liability</h2>
 
 <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL EMMAUS OR ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, OR SUPPLIERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUES, DATA, GOODWILL, OR OTHER INTANGIBLE LOSSES, OR FOR ANY PERSONAL INJURY OR EMOTIONAL DISTRESS, ARISING OUT OF OR RELATING TO YOUR USE OF, OR INABILITY TO USE, THE APP OR ANY AI-GENERATED CONTENT</strong>, whether based on warranty, contract, tort (including negligence), statute, or any other legal theory, and whether or not Emmaus has been advised of the possibility of such damages.</p>
 
@@ -227,21 +250,21 @@
 
 <p>These limitations are a fundamental basis of the bargain between you and Emmaus. Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above may not apply to you; in such cases, Emmaus’ liability is limited to the fullest extent permitted by law. <strong>Nothing in this Agreement limits liability that cannot be limited by law</strong>, including, where applicable, liability for gross negligence, willful misconduct, fraud, or personal injury caused by our negligence.</p>
 
-<h2>15. Indemnification</h2>
+<h2 id="15-indemnification">15. Indemnification</h2>
 
 <p>To the extent permitted by applicable law, you agree to indemnify, defend, and hold harmless Emmaus and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with (a) your misuse of the App, (b) your violation of this Agreement or applicable law, or (c) your violation of the rights of any third party.</p>
 
-<h2>16. Governing Law and Dispute Resolution</h2>
+<h2 id="16-governing-law-and-dispute-resolution">16. Governing Law and Dispute Resolution</h2>
 
 <p>This Agreement is governed by the laws of the <strong>State of Florida, United States</strong>, without regard to its conflict-of-laws principles, except that the foregoing does not affect Apple's separate terms with you. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p>
 
 <p>Subject to any mandatory rights you have under local consumer-protection law, you and Emmaus agree that any dispute arising out of or relating to this Agreement or the App will be resolved exclusively in the state or federal courts located in <strong>Palm Beach County, Florida</strong>, and you consent to the personal jurisdiction of those courts, unless the parties otherwise agree in writing to arbitration.</p>
 
-<h2>17. Termination</h2>
+<h2 id="17-termination">17. Termination</h2>
 
 <p>This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically, without notice, if you fail to comply with any of its terms. We may also suspend or terminate your access, in whole or in part, at any time, with or without cause, including to protect the safety or integrity of the service or to comply with law. Upon termination, you must stop using the App and delete all copies. Sections that by their nature should survive termination — including Sections 6 through 16 and 18 — will survive.</p>
 
-<h2>18. Apple-Specific Terms (Required)</h2>
+<h2 id="18-apple-specific-terms-required">18. Apple-Specific Terms (Required)</h2>
 
 <p>You and Emmaus acknowledge that this Agreement is concluded between you and Emmaus only, and <strong>not with Apple</strong>, and that <strong>Emmaus, not Apple, is solely responsible for the App and its content</strong>. The following terms apply with respect to your use of the App on Apple devices:</p>
 
@@ -256,27 +279,89 @@
   <li><strong>Third-party beneficiary.</strong> You and Emmaus acknowledge and agree that <strong>Apple, and Apple's subsidiaries, are third-party beneficiaries of this Agreement</strong>, and that, upon your acceptance of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary.</li>
 </ul>
 
-<h2>19. Changes to This Agreement</h2>
+<h2 id="19-changes-to-this-agreement">19. Changes to This Agreement</h2>
 
 <p>We may update this Agreement from time to time. When we make material changes, we will update the "Last updated" date above and, where appropriate, provide notice in the App. Your continued use of the App after the changes take effect constitutes acceptance of the updated Agreement. If you do not agree to the changes, stop using the App and delete your account.</p>
 
-<h2>20. General</h2>
+<h2 id="20-general">20. General</h2>
 
 <p>This Agreement, together with the Privacy Policy and the Apple Standard EULA, is the entire agreement between you and Emmaus regarding the App and supersedes any prior agreements. If any provision is held unenforceable, the remaining provisions will remain in full force, and the unenforceable provision will be modified to the minimum extent necessary to make it enforceable. Our failure to enforce any provision is not a waiver. You may not assign this Agreement without our consent; we may assign it in connection with a merger, acquisition, or sale of assets. Section headings are for convenience only.</p>
 
-<h2>21. Contact</h2>
+<h2 id="21-contact">21. Contact</h2>
 
 <p>Questions about this Agreement may be sent to:</p>
 
 <p><strong>Disciple Maker LLC</strong> Email: <strong>support@getemmaus.app</strong> 126 Hammocks Court, Green Acres, Florida 33413</p>
-</article>
-
+</main>
 <div class="doc-foot">
   <p class="disclaimer">These Terms should be reviewed by qualified legal counsel before publication and must remain consistent with the released App and the public website.</p>
   <a class="backlink" href="/about/">About Emmaus and its publisher</a><br>
-  <a class="backlink" href="/privacy/">Read the Privacy Policy</a><br>
-  <a class="backlink" href="/">&larr; Back to getemmaus.app</a>
+  <a class="backlink" href="/privacy/">Read the Privacy Policy</a>
+</div>
 </div>
 
+<footer class="sitefooter">
+  <div class="wrap fgrid">
+    <div class="fbrand">
+      <a class="mark" href="/">Emmaus</a>
+      <p>A daily discipleship tool for iPhone and iPad.</p>
+      <a class="mail" href="mailto:hello@getemmaus.app">hello@getemmaus.app</a>
+    </div>
+    <div class="fcol">
+      <h2>Emmaus</h2>
+      <ul>
+        <li><a href="/spot/">The film</a></li>
+        <li><a href="/about/">About Emmaus</a></li>
+        <li><a href="/start-here/">Start here</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="Guides">
+      <h2>Start reading</h2>
+      <ul>
+        <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+        <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+        <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+        <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+      </ul>
+      <h2>Understand what you read</h2>
+      <ul>
+        <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+        <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+        <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="More guides">
+      <h2>Prayer and quiet time</h2>
+      <ul>
+        <li><a href="/how-to-pray/">How to pray</a></li>
+        <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+      </ul>
+      <h2>Passages explained</h2>
+      <ul>
+        <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+        <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+      </ul>
+      <p class="all"><a href="/guides/">See all guides</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ffamily">
+      <div>
+        <h2>From the Disciple Maker family</h2>
+        <p>Emmaus is published by Disciple Maker, LLC, the same publisher as <a href="https://goodsoildiscipleship.com/">Good Soil Discipleship</a>, a family and small-group discipleship ministry with a free <a href="https://goodsoildiscipleship.com/family-kit">Family Discipleship Kit</a>, and the <a href="https://goodsoilplanner.com/">Good Soil Planner</a>, a printed 90-day Christian discipleship planner.</p>
+      </div>
+      <div class="badge">
+        <a href="https://applauncher.dev/apps/emmaus/" target="_blank" rel="noopener"><img src="https://applauncher.dev/badge/emmaus.svg?theme=dark&size=md" alt="Emmaus on applauncher.dev" width="204" height="50" loading="lazy" /></a>
+      </div>
+    </div>
+    <div class="flegal">
+      <span class="copy">&copy; 2026 Disciple Maker LLC</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -246,3 +246,14 @@ p,li,dd{text-wrap:pretty}
   .sitenav .btn{margin-left:0}
   .invite{padding:72px 0}
 }
+
+/* ---------- legal documents ---------- */
+.doc,.doc-foot{overflow-wrap:break-word}
+.doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--bg-sunken);
+  border:1px solid var(--border);border-radius:6px;padding:1px 6px}
+.doc-foot{grid-column:-2/-1;font-size:16px}
+.doc-foot a.backlink{display:inline-block;margin-top:14px;font-weight:600;color:var(--olive-deep);
+  text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;
+  text-decoration-color:color-mix(in srgb,var(--olive) 40%,transparent)}
+.doc-foot a.backlink:hover{text-decoration-color:var(--olive)}
+.doc-foot .disclaimer{margin-bottom:10px}
