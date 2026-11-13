@@ -219,9 +219,9 @@
   @supports not (background:color-mix(in srgb,#fff 50%,transparent)){nav{background:rgba(251,246,238,.92)}}
   .navin{display:flex;align-items:center;gap:28px;height:64px}
   .brand{font-family:var(--serif);font-size:23px;font-weight:600;text-decoration:none;letter-spacing:.01em}
-  .navlinks{display:flex;gap:6px;margin-left:auto}
-  .navlinks a{font-size:14px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:8px 10px;border-radius:8px}
-  .navlinks a:hover{color:var(--ink);background:color-mix(in srgb,var(--border) 45%,transparent)}
+  .navlinks{display:flex;align-items:center;gap:6px;margin-left:auto}
+  .navlinks>a,.gmenu>summary{font-size:14px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:8px 10px;border-radius:8px}
+  .navlinks>a:hover,.gmenu>summary:hover,.gmenu[open]>summary{color:var(--ink);background:color-mix(in srgb,var(--border) 45%,transparent)}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--olive);color:#fff;
     font-weight:600;font-size:16px;text-decoration:none;border-radius:99px;padding:14px 26px;min-height:48px;
     transition:background .15s ease;border:none;cursor:pointer}
@@ -416,23 +416,64 @@
   #go .body{margin:16px auto 0;text-align:center}
   #go .act{margin-top:32px;display:flex;flex-direction:column;align-items:center;gap:14px}
 
-  footer{background:#221c14;color:#b6a88e;padding:36px 0}
-  .footin{display:flex;align-items:center;gap:6px 8px;flex-wrap:wrap;font-size:15px}
-  .footin a{color:#d9cbb4;text-decoration:none;padding:12px 10px;border-radius:8px}
-  .footin a:hover{color:#fff}
-  .footin .copy{margin-left:auto;font-size:13px}
-  .family{margin-top:22px;max-width:42rem;font-size:14px;line-height:1.55;color:#b6a88e}
-  .family h2{margin:0 0 8px;font-family:var(--serif);font-size:16px;font-weight:600;color:#f1ecdf}
-  .family p{margin:0}
-  .family a{color:#d9cbb4;text-decoration:underline;text-underline-offset:2px}
-  .family a:hover{color:#fff}
-  .footbadge{margin-top:20px}
-  .footbadge a{display:inline-block;border-radius:13px}
-  .footbadge img{display:block}
-  footer :focus-visible{outline-color:var(--candle)}
+  /* Guides menu: a <details> so it works without script; site.js adds
+     outside-click and Escape to close. */
+  .gmenu{position:relative}
+  .gmenu>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px;user-select:none}
+  .gmenu>summary::-webkit-details-marker{display:none}
+  .gmenu>summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+    transform:translateY(-2px) rotate(45deg);transition:transform .18s ease}
+  .gmenu[open]>summary::after{transform:translateY(2px) rotate(225deg)}
+  .gpanel{position:absolute;top:calc(100% + 14px);right:-150px;width:max-content;max-width:calc(100vw - 48px);
+    background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--elev-big);
+    padding:26px 28px 0;display:grid;grid-template-columns:repeat(3,auto);gap:6px 36px;overflow:hidden}
+  .gpanel h3{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--amber-text);margin:0 0 6px}
+  .gpanel ul{list-style:none;margin:0 0 18px;padding:0}
+  .gpanel li a{display:block;padding:7px 10px;margin:0 -10px;border-radius:9px;text-decoration:none;
+    font-family:var(--serif);font-size:16px;line-height:1.3;color:var(--ink);text-wrap:nowrap}
+  .gpanel li a:hover{background:var(--bg-sunken);color:var(--olive-deep)}
+  .gpanel li a[aria-current=page]{color:var(--olive-deep);background:#eef3e8}
+  .gpanel .gall{grid-column:1/-1;margin:4px -28px 0;padding:15px 28px;background:var(--bg-sunken);border-top:1px solid var(--border);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:14px;color:var(--ink-3)}
+  .gpanel .gall a{font-weight:600;color:var(--olive-deep);text-decoration:underline;text-underline-offset:4px;
+    text-decoration-color:color-mix(in srgb,var(--olive) 40%,transparent);white-space:nowrap}
 
+  /* ---------- footer ---------- */
+  .sitefooter{background:#221c14;color:#b6a88e;padding:64px 0 28px;font-size:15px}
+  .sitefooter a{color:#d9cbb4;text-decoration:none}
+  .sitefooter a:hover{color:#fff}
+  .sitefooter :focus-visible{outline-color:var(--candle)}
+  .fgrid{display:grid;grid-template-columns:1.35fr .8fr 1.25fr 1.1fr;gap:40px 48px}
+  .fbrand .mark{font-family:var(--serif);font-size:26px;font-weight:600;color:#f1ecdf;letter-spacing:.01em}
+  .fbrand p{margin-top:10px;max-width:30ch;line-height:1.55}
+  .fbrand .mail{display:inline-block;margin-top:16px;border-bottom:1px solid rgba(217,203,180,.35);padding-bottom:1px}
+  .fcol h2{font-family:var(--sans);font-size:13px;font-weight:600;color:#f1ecdf;margin-bottom:12px;letter-spacing:0;line-height:1.4}
+  .fcol h2+ul+h2{margin-top:26px}
+  .fcol ul{list-style:none}
+  .fcol li a{display:inline-block;padding:5px 0;line-height:1.4}
+  .fcol .all{margin-top:14px}
+  .fcol .all a{color:#f1ecdf;border-bottom:1px solid rgba(241,236,223,.4);padding-bottom:1px}
+  .ffamily{margin-top:48px;padding-top:28px;border-top:1px solid rgba(217,203,180,.16);display:grid;
+    grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:center}
+  .ffamily h2{font-family:var(--serif);font-size:16px;font-weight:600;color:#f1ecdf;margin:0 0 8px;letter-spacing:0;line-height:1.3}
+  .ffamily p{max-width:42rem;font-size:14px;line-height:1.55}
+  .ffamily p a{text-decoration:underline;text-underline-offset:2px}
+  .ffamily .badge a{display:inline-block;border-radius:13px}
+  .flegal{margin-top:28px;padding-top:20px;border-top:1px solid rgba(217,203,180,.16);display:flex;flex-wrap:wrap;
+    gap:8px 24px;align-items:center;font-size:13.5px}
+  .flegal .copy{margin-right:auto}
+
+  @media (max-width:1040px){
+    .fgrid{grid-template-columns:1fr 1fr;gap:36px 32px}
+    .gpanel{right:-110px}
+  }
   @media (max-width:980px){
-    .navlinks{display:none}
+    .navlinks>a{display:none}
+    .navin{gap:12px}
+    .gmenu{position:static}
+    .gpanel{position:fixed;top:64px;left:12px;right:12px;width:auto;max-height:calc(100vh - 84px);overflow:auto;
+      grid-template-columns:1fr 1fr;padding:22px 22px 0}
+    .gpanel .gall{margin:4px -22px 0;padding:14px 22px}
     .hero{grid-template-columns:1fr;padding-top:112px;padding-bottom:64px;min-height:0;gap:44px}
     .split,#manifesto .grid{grid-template-columns:1fr;gap:44px}
     .split.flip>.copy{order:1}
@@ -463,6 +504,15 @@
     .phone{width:min(270px,66vw)}
     #pricing .half{padding:30px 24px}
   }
+  @media (max-width:640px){
+    .gpanel{grid-template-columns:1fr}
+    .gpanel li a{text-wrap:wrap}
+    .gpanel ul{margin-bottom:14px}
+    .fgrid{grid-template-columns:1fr}
+    .ffamily{grid-template-columns:1fr}
+    .sitefooter{padding-top:48px}
+    nav .btn{margin-left:0}
+  }
 </style>
 </head>
 <body>
@@ -475,6 +525,41 @@
       <a href="#difference">Why Emmaus</a>
       <a href="#day">A day with Emmaus</a>
       <a href="#together">Together</a>
+      <details class="gmenu">
+        <summary>Guides</summary>
+        <div class="gpanel">
+          <div>
+          <h3>Start reading</h3>
+          <ul>
+            <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+            <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+            <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+            <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Understand what you read</h3>
+          <ul>
+            <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+            <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+            <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+          </ul>
+          </div>
+          <div>
+          <h3>Prayer and quiet time</h3>
+          <ul>
+            <li><a href="/how-to-pray/">How to pray</a></li>
+            <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+          </ul>
+          <h3>Passages explained</h3>
+          <ul>
+            <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+            <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+          </ul>
+          </div>
+          <p class="gall"><span>Plain, Scripture-first answers for people starting out.</span> <a href="/guides/">See all guides</a></p>
+        </div>
+      </details>
       <a href="#faq">Questions</a>
       <a href="#pricing">Pricing</a>
     </div>
@@ -735,38 +820,66 @@
 
 </main>
 
-<footer>
-  <div class="wrap footin">
-    <span style="font-family:var(--serif);font-size:19px;color:#f1ecdf;margin-right:10px">Emmaus</span>
-    <a href="/spot/">The film</a>
-    <a href="/support/">Support</a>
-    <a href="/privacy/">Privacy</a>
-    <a href="/terms/">Terms</a>
-    <a href="/about/">About Emmaus</a>
-    <a href="/start-here/">Start here</a>
-    <a href="mailto:hello@getemmaus.app">hello@getemmaus.app</a>
-    <span class="copy">&copy; 2026 Disciple Maker LLC</span>
+<footer class="sitefooter">
+  <div class="wrap fgrid">
+    <div class="fbrand">
+      <a class="mark" href="/">Emmaus</a>
+      <p>A daily discipleship tool for iPhone and iPad.</p>
+      <a class="mail" href="mailto:hello@getemmaus.app">hello@getemmaus.app</a>
+    </div>
+    <div class="fcol">
+      <h2>Emmaus</h2>
+      <ul>
+        <li><a href="/spot/">The film</a></li>
+        <li><a href="/about/">About Emmaus</a></li>
+        <li><a href="/start-here/">Start here</a></li>
+        <li><a href="/support/">Support</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="Guides">
+      <h2>Start reading</h2>
+      <ul>
+        <li><a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a></li>
+        <li><a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a></li>
+        <li><a href="/bible-reading-plan/">Bible reading plan for beginners</a></li>
+        <li><a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a></li>
+      </ul>
+      <h2>Understand what you read</h2>
+      <ul>
+        <li><a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a></li>
+        <li><a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a></li>
+        <li><a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a></li>
+      </ul>
+    </div>
+    <div class="fcol" role="navigation" aria-label="More guides">
+      <h2>Prayer and quiet time</h2>
+      <ul>
+        <li><a href="/how-to-pray/">How to pray</a></li>
+        <li><a href="/how-to-have-a-quiet-time/">How to have a quiet time</a></li>
+      </ul>
+      <h2>Passages explained</h2>
+      <ul>
+        <li><a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a></li>
+        <li><a href="/john-3-16-meaning/">What John 3:16 means</a></li>
+      </ul>
+      <p class="all"><a href="/guides/">See all guides</a></p>
+    </div>
   </div>
-  <div class="wrap footin" role="navigation" aria-label="Guides">
-    <strong>Guides</strong>
-    <a href="/where-to-start-reading-the-bible/">Where to start reading the Bible</a>
-    <a href="/how-to-read-the-bible-for-beginners/">How to read the Bible for beginners</a>
-    <a href="/bible-reading-plan/">Bible reading plan for beginners</a>
-    <a href="/how-to-read-the-bible-and-understand-it/">How to read the Bible and understand it</a>
-    <a href="/how-to-make-bible-reading-a-habit/">How to make Bible reading a habit</a>
-    <a href="/how-to-study-the-bible-for-beginners/">How to study the Bible</a>
-    <a href="/how-to-pray/">How to pray</a>
-    <a href="/how-to-have-a-quiet-time/">How to have a quiet time</a>
-    <a href="/road-to-emmaus/">The road to Emmaus (Luke 24)</a>
-    <a href="/john-3-16-meaning/">What John 3:16 means</a>
-    <a href="/advent-bible-reading-plan/">Advent Bible reading plan 2026</a>
-  </div>
-  <div class="wrap family">
-    <h2>From the Disciple Maker family</h2>
-    <p>Emmaus is published by Disciple Maker, LLC, the same publisher as <a href="https://goodsoildiscipleship.com/">Good Soil Discipleship</a>, a family and small-group discipleship ministry with a free <a href="https://goodsoildiscipleship.com/family-kit">Family Discipleship Kit</a>, and the <a href="https://goodsoilplanner.com/">Good Soil Planner</a>, a printed 90-day Christian discipleship planner.</p>
-  </div>
-  <div class="wrap footbadge">
-    <a href="https://applauncher.dev/apps/emmaus/" target="_blank" rel="noopener"><img src="https://applauncher.dev/badge/emmaus.svg?theme=dark&size=md" alt="Emmaus on applauncher.dev" width="204" height="50" /></a>
+  <div class="wrap">
+    <div class="ffamily">
+      <div>
+        <h2>From the Disciple Maker family</h2>
+        <p>Emmaus is published by Disciple Maker, LLC, the same publisher as <a href="https://goodsoildiscipleship.com/">Good Soil Discipleship</a>, a family and small-group discipleship ministry with a free <a href="https://goodsoildiscipleship.com/family-kit">Family Discipleship Kit</a>, and the <a href="https://goodsoilplanner.com/">Good Soil Planner</a>, a printed 90-day Christian discipleship planner.</p>
+      </div>
+      <div class="badge">
+        <a href="https://applauncher.dev/apps/emmaus/" target="_blank" rel="noopener"><img src="https://applauncher.dev/badge/emmaus.svg?theme=dark&size=md" alt="Emmaus on applauncher.dev" width="204" height="50" loading="lazy" /></a>
+      </div>
+    </div>
+    <div class="flegal">
+      <span class="copy">&copy; 2026 Disciple Maker LLC</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </div>
   </div>
 </footer>
 
@@ -804,5 +917,6 @@
   })
 })()
 </script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
